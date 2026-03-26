@@ -1,0 +1,95 @@
+<template>
+  <section
+    id="registration"
+    class="bg-black flex flex-col w-full px-5 xl:pl-0 xl:pr-10 relative overflow-hidden !mt-0 x z-40 crt pb-24 pt-8 xl:pt-0"
+    data-scroll="register"
+  >
+    <div
+      class="w-full flex justify-center pt-32 pb-16 xl:pt-24 xl:pb-8 sm:max-w-xl xl:max-w-full mx-auto"
+    >
+      <div
+        class="flex text-white flex-col self-center registration-container text-center"
+        v-if="isRegistrationOpen()"
+      >
+        <h2
+          class="text-terminal-glow text-shadow-glow text-7xl xl:text-5.25xl font-W95FA heading pb-10 xl:pb-10 registration-title"
+          data-content="Registration"
+        >
+          Registration
+        </h2>
+        <div class="text-terminal-text/60 text-3xl text relative text-shadow-glow-low justify-center">
+          <RegistrationForm />
+        </div>
+      </div>
+
+      <div
+          class="flex text-white flex-col w-full xl:w-128 self-center registration-container text-center"
+          v-else
+      >
+        <div class="w-full">
+          <h2
+              class="text-terminal-glow text-shadow-glow text-7xl xl:text-5.25xl font-W95FA heading pb-10 xl:pb-10"
+              data-content="Registration"
+          >
+            Registration
+          </h2>
+          <div class="text-terminal-text/60 text-3xl text relative text-shadow-glow-low">
+            <p class="mb-6">
+              Registration will open soon...
+            </p>
+            <a
+                href="https://assets-eur.mkt.dynamics.com/657de2ab-55d4-4044-924d-9ecbe20bfe9f/digitalassets/standaloneforms/c4200ae6-27fb-ef11-bae2-002248a3cd20?readableEventId=WP_CTF_2025_-_Preregistration2670295690"
+                target="_blank"
+                type="button"
+                class="button bg-terminal-text text-black uppercase hover:bg-white"
+            >
+              Notify me
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+import RegistrationForm from "@/components/elements/RegistrationForm.vue";
+
+function isRegistrationOpen() {
+  const registrationOpenDate = new Date('2025-07-14T00:00:00Z');
+  const currentDate = new Date();
+  return currentDate >= registrationOpenDate;
+}
+</script>
+
+<style lang="postcss" scoped>
+.registration-title::before {
+  left: 20%
+}
+
+.button {
+  @apply inline-flex h-10 items-center px-7 text-xl relative;
+
+  &--white {
+    &:hover {
+      @apply !bg-terminal-text/40 !text-terminal-text;
+    }
+  }
+
+  &--transparent {
+    &:after {
+      content: '';
+      @apply absolute top-0 left-0 w-full h-full -z-10;
+    }
+
+    &:hover {
+      @apply text-terminal-text;
+
+      &:after {
+        @apply border-2 border-terminal-bg;
+      }
+    }
+  }
+}
+</style>

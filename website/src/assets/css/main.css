@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import '_glitch.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Sysfont';
+  src:
+    url('../webfonts/sysfont.woff') format('woff'),
+    url('../webfonts/sysfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'W95FA';
+  src: url('../webfonts/w95fa.woff2') format('woff2');
+}
+
+body,
+html {
+  @apply bg-black;
+  font-family: 'VT323', monospace;
+}
+
+body {
+  @apply flex flex-col;
+}
+
+#app {
+  @apply flex-grow;
+}
+
+@media (min-width: 1921px) {
+  body,
+  html {
+    font-size: clamp(1.0625rem, 0.75rem + 0.2604vw, 1.375rem);
+  }
+}
+
+@media (max-width: 1680px) {
+  body,
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1536px) {
+  body,
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1440px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1366px) {
+  body,
+  html {
+    font-size: 13px;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar ::-moz-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-color: transparent transparent; /*just hides the scrollbar for firefox */
+}
+
+.dialogProviderInternalContainerStyle {
+  background: #ffffff;
+}
+
+h1,
+h2,
+p,
+h2,
+span,
+a,
+.text-terminal-glow,
+.text-terminal-text,
+.text-shadow-glow-medium,
+.text-shadow-glow-low,
+.text {
+  z-index: 999;
+}

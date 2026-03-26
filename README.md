@@ -1,6 +1,7 @@
-# WP CTF - play. pwn. peak.
+# WP CTF - play. pwn. peak
 
-Source code of the official website for [WP CTF](https://wpctf.it/), the cybersecurity Capture the
+Source code of the official website for
+[WP CTF](https://wpctf.it/), the cybersecurity Capture the
 Flag competition organized by
 [Würth IT Italy](https://www.wuerth-it.it/) and hosted in Bolzano, South Tyrol.
 
@@ -17,5 +18,3 @@ Previous editions:
 * [2025](https://2025.wpctf.it/)
 * [2024](https://2024.wpctf.it/)
 * [2023](https://2023.wpctf.it/)
-
-

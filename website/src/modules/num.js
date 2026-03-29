@@ -65,4 +65,3 @@ export function smootherstep(edge0, edge1, t) {
 export function mod(a, b) {
     return a % b
 }
-

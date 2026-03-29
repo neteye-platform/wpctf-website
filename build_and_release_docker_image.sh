@@ -14,5 +14,5 @@ fi
 
 IMAGE_NAME="wpctf-website:$TAG"
 
-podman build --no-cache --file Dockerfile --tag $IMAGE_NAME .
-podman push $IMAGE_NAME $REGISTRY/$IMAGE_NAME
+podman build --no-cache --file Dockerfile --tag "$IMAGE_NAME" .
+podman push "$IMAGE_NAME" "$REGISTRY/$IMAGE_NAME"

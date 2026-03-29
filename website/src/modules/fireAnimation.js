@@ -58,7 +58,7 @@ export function main(coord, context, cursor, buffer) {
 }
 
 
-// Random int betweem a and b, inclusive!
+// Random int between a and b, inclusive!
 function rndi(a, b=0) {
     if (a > b) [a, b] = [b, a]
     return Math.floor(a + Math.random() * (b - a + 1))

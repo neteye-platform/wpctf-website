@@ -5,7 +5,7 @@
 
   - No vector class (a 'vector' is just any object with {x, y})
   - The functions never modify the original object.
-  - An optional destination object can be passed as last paremeter to all
+  - An optional destination object can be passed as last parameter to all
   the functions (except vec2()).
   - All function can be exported individually or grouped via default export.
   - For the default export use:
@@ -87,7 +87,7 @@ export function subN(a, k, out) {
     return out
 }
 
-// Mutiplies a vector by a scalar
+// Multiples a vector by a scalar
 export function mulN(a, k, out) {
     out = out || vec2(0, 0)
 
@@ -249,4 +249,3 @@ export function round(a, out) {
     out.y = Math.round(a.y)
     return out
 }
-

@@ -1,4 +1,4 @@
-FROM node:25.8.2@sha256:ccfc02deb6abb1b70b6ef21d3d93b3f671c0de6f463ff331cf0ea0a28ad875c9 AS BUILD_IMAGE
+FROM node:25.8.2@sha256:ccfc02deb6abb1b70b6ef21d3d93b3f671c0de6f463ff331cf0ea0a28ad875c9 AS build_image
 
 WORKDIR /app/website
 
@@ -17,7 +17,7 @@ FROM node:25.8.2@sha256:ccfc02deb6abb1b70b6ef21d3d93b3f671c0de6f463ff331cf0ea0a2
 
 WORKDIR /app/website/
 
-COPY --from=BUILD_IMAGE /app/website/dist ./dist
+COPY --from=build_image /app/website/dist ./dist
 
 # install simple http server for serving static content
 RUN npm install -g http-server@14.1.1

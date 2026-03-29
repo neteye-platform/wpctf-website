@@ -1,0 +1,18 @@
+#!/bin/bash
+
+TAG="$1"
+if [ -z "$TAG" ] ; then
+    echo "[-] TAG is required."
+    exit 1
+fi
+
+REGISTRY="$2"
+if [ -z "$REGISTRY" ] ; then
+    echo "[-] REGISTRY is required."
+    exit 1
+fi
+
+IMAGE_NAME="wpctf-website:$TAG"
+
+podman build --no-cache --file Dockerfile --tag $IMAGE_NAME .
+podman push $IMAGE_NAME $REGISTRY/$IMAGE_NAME

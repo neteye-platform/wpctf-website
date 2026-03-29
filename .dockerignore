@@ -1,0 +1,8 @@
+node_modules
+registration-challenge/pkg/
+registration-challenge/target/
+website/build/
+website/public/js/registration_challenge.js
+website/public/js/registration_challenge_bg.wasm
+website/public/js/zzc3IJDtB2kn5FMWa.js
+website/public/js/zzc3IJDtB2kn5FMWa_bg.wasm

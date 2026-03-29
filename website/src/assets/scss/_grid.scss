@@ -1,0 +1,108 @@
+$container-xxxxlarge: 2200px;
+$container-xxxlarge: 1648px;
+$container-xxlarge: 1400px;
+$container-xlarge: 1280px;
+$container-large: 100%;
+$container-medium: 100%;
+$container-small: 100%;
+
+$columns-in-grid: 4;
+
+$container-padding-xxxxlarge:40px;
+$container-padding-xxxlarge:40px;
+$container-padding-xxlarge:40px;
+$container-padding-xlarge:40px;
+$container-padding-large:40px;
+$container-padding-medium:10px;
+$container-padding-small:10px;
+
+$break-small: 480px;
+$break-medium: 768px;
+$break-large: 1024px;
+$break-xlarge: 1280px;
+$break-xxlarge: 1408px;
+$break-xxxlarge: 1656px;
+$break-xxxxlarge: 2000px;
+
+@mixin breakpoint($size) {
+  @if $size == small {
+    @media (min-width: 0) and (max-width: $break-small - 1px) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media (min-width: $break-small) and (max-width: $break-medium - 1px) {
+      @content;
+    }
+  } @else if $size == large {
+    @media (min-width: $break-medium) and (max-width: $break-xlarge - 1px) {
+      @content;
+    }
+  } @else if $size == xlarge {
+    @media (min-width: $break-large) and (max-width: $break-xlarge - 1px) {
+      @content;
+    }
+  } @else if $size == xxlarge {
+    @media (min-width: $break-xlarge) and (max-width: $break-xxxlarge - 1px) {
+      @content;
+    }
+  } @else if $size == xxxlarge {
+    @media (min-width: $break-xxlarge) and (max-width: $break-xxxxlarge - 1px) {
+      @content;
+    }
+  } @else if $size == xxxxlarge {
+    @media (min-width: $break-xxxxlarge) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$size}.";
+  }
+}
+
+$xxxxlarge-column-size: $container-xxxxlarge / $columns-in-grid;
+$xxxlarge-column-size: $container-xxxlarge / $columns-in-grid;
+$xxlarge-column-size: $container-xxlarge / $columns-in-grid;
+$xlarge-column-size: $container-xlarge / $columns-in-grid;
+$large-column-size: $container-large / $columns-in-grid;
+$medium-column-size: $container-medium / $columns-in-grid;
+$small-column-size: $container-small / $columns-in-grid;
+
+@mixin generate-grid($breakpoint-name, $column-size) {
+  @include breakpoint($breakpoint-name) {
+    @for $i from 1 through 4 {
+      .#{$breakpoint-name}-col-#{$i} {
+        width: 100%;
+        max-width: $column-size * $i;
+      }
+    }
+  }
+}
+
+@mixin generate-offset-grid($breakpoint-name, $column-size) {
+  @include breakpoint($breakpoint-name) {
+    @for $i from 1 through 4 {
+      .#{$breakpoint-name}-offset-left-#{$i} {
+        margin-left: $column-size * $i;
+      }
+    }
+    @for $i from 1 through 4 {
+      .#{$breakpoint-name}-offset-right-#{$i} {
+        margin-right: $column-size * $i;
+      }
+    }
+  }
+}
+@include generate-grid(small, $small-column-size);
+@include generate-grid(medium, $medium-column-size);
+@include generate-grid(large, $large-column-size);
+@include generate-grid(xlarge, $xlarge-column-size);
+@include generate-grid(xxlarge, $xxlarge-column-size);
+@include generate-grid(xxxlarge, $xxxlarge-column-size);
+@include generate-grid(xxxxlarge, $xxxxlarge-column-size);
+
+@include generate-offset-grid(small, $small-column-size);
+@include generate-offset-grid(medium, $medium-column-size);
+@include generate-offset-grid(large, $large-column-size);
+@include generate-offset-grid(xlarge, $xlarge-column-size);
+@include generate-offset-grid(xxlarge, $xxlarge-column-size);
+@include generate-offset-grid(xxxlarge, $xxxlarge-column-size);
+@include generate-offset-grid(xxxxlarge, $xxxlarge-column-size);

@@ -1,0 +1,30 @@
+$cursor-default-white: url('~@/assets/cursors/cursorDefault.svg') 2 2, default;
+$cursor-default-red: url('~@/assets/cursors/cursorDefault-1.svg') 3 3, default;
+$cursor-default-green: url('~@/assets/cursors/cursorDefault-2.svg') 2 2, default;
+
+$cursor-pointer-white: url('~@/assets/cursors/cursorPointer-1.svg') 10 4, pointer;
+$cursor-pointer-green: url('~@/assets/cursors/cursorPointer.svg') 10 4, pointer;
+$cursor-pointer-red: url('~@/assets/cursors/cursorPointer-2.svg') 12 3, pointer;
+
+$cursor-text-white: url('~@/assets/cursors/cursorText-1.svg') 8 4, text;
+$cursor-text-green: url('~@/assets/cursors/cursorText.svg') 8 4, text;
+$cursor-text-red: url('~@/assets/cursors/cursorText-2.svg') 7 12, text;
+
+body {
+  cursor: $cursor-default-green;
+}
+
+a, button {
+  &:hover {
+    cursor: $cursor-pointer-green!important;
+  }
+}
+input, textarea {
+  &:hover {
+    cursor: $cursor-text-red;
+  }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  cursor: $cursor-text-white;
+}

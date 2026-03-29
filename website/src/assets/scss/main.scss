@@ -1,0 +1,68 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "router";
+@import "grid";
+@import "cursors";
+@import "glitch";
+
+
+body{
+  background-color: $body-background;
+  color: $main-text-color;
+  font-family: 'DotGothic16';
+  line-height: 1;
+
+}
+
+a{
+  color: $main-link-color;
+  font-family: 'VT323';
+  &:hover{
+    text-decoration: none;
+    color: $main-link-color;
+    text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.7);
+  }
+}
+
+hr {
+  width: 100%;
+  color: #0E1313;
+}
+
+.container{
+  width: 100%;
+  max-width: 2200px;
+  padding: 0 $container-padding-xxxxlarge;
+  margin: 0 auto;
+
+  @include breakpoint(xxxlarge) {
+    max-width: $container-xxxlarge;
+    padding: 0 $container-padding-xxxlarge;
+  }
+
+  @include breakpoint(xxlarge) {
+    max-width: $container-xxlarge;
+    padding: 0 $container-padding-xxlarge;
+  }
+
+  @include breakpoint(xlarge) {
+    max-width: $container-xlarge;
+    padding: 0 $container-padding-xlarge;
+  }
+
+  @include breakpoint(large) {
+    max-width: $container-large;
+    padding: 0 $container-padding-large;
+  }
+
+  @include breakpoint(medium) {
+    max-width: $container-medium;
+    padding: 0 $container-padding-medium;
+  }
+
+  @include breakpoint(small) {
+    max-width: $container-small;
+    padding: 0 $container-padding-small;
+  }
+}

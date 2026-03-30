@@ -4,12 +4,13 @@ on:
   pull_request:
     branches: ['*']
 
-permissions:
-  contents: read
-
 jobs:
   build:
-    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@e4f9b818a5536545caf38199e5bfeff57076f1c3 # main
+    permissions:
+      contents: read
+      packages: write
+
+    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@f5ab1c0368138598c023987454858b9e3f6a2ef1 # main
     with:
       working-directory: "."
       dockerfile-path: "./Dockerfile"
@@ -22,6 +23,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 15
+
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository

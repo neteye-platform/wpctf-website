@@ -17,14 +17,14 @@
     "postcss": ">=8.5.6"
   },
   "dependencies": {
-    "gsap": "^3.14.0",
-    "mitt": "^3.0.1",
-    "mobile-device-detect": "^0.4.3",
-    "pinia": "^3.0.4",
-    "vue": "^3.5.25",
-    "vue-matomo": "^4.2.0",
-    "vue-router": "^4.6.3",
-    "vue3-cookies": "^1.0.6"
+    "gsap": "3.14.2",
+    "mitt": "3.0.1",
+    "mobile-device-detect": "0.4.3",
+    "pinia": "3.0.4",
+    "vue": "3.5.31",
+    "vue-matomo": "4.2.0",
+    "vue-router": "4.6.4",
+    "vue3-cookies": "1.0.6"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",

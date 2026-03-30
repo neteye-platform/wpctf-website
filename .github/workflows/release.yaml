@@ -1,0 +1,19 @@
+name: Release on Tag
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-push:
+    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@e4f9b818a5536545caf38199e5bfeff57076f1c3 # main
+    with:
+      working-directory: "."
+      dockerfile-path: "./Dockerfile"
+      image-name: ${{ github.event.repository.name }}
+      push: true
+    secrets: inherit

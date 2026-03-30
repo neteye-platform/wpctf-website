@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build-and-push:
-    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@e4f9b818a5536545caf38199e5bfeff57076f1c3 # main
+    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@cb067dd394dc61458398df6c6ffb903dc0511073 # main
     with:
       working-directory: "."
       dockerfile-path: "./Dockerfile"

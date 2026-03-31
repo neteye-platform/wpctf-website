@@ -2,7 +2,7 @@
   <div
     v-if="!userMadeChoice"
     id="cookie-container"
-    class="fixed top-0 bottom-0 left-0 right-0 flex pt-60 w-full h-full z-50 bg-black/80 justify-center"
+    class="fixed top-0 bottom-0 left-0 right-0 flex w-full h-full z-50 bg-black/80 justify-center items-center"
   >
     <div id="cookie" class="w-96 flex justify-center overflow-hidden">
       <div
@@ -87,7 +87,7 @@ function decline() {
     display: block;
     width: 100%;
     height: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxwYXRoIHN0cm9rZT0ibnVsbCIgZmlsbD0iI0ZGQkYwMCIgZD0ibTguMTU2MywxbC02LjMxMjU5LDBsMCwtMWw2LjMxMjU5LDBsMCwxeiIgaWQ9InN2Z18yIi8+CiA8L2c+Cjwvc3ZnPgo=)
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxwYXRoIHN0cm9rZT0ibnVsbCIgZmlsbD0iI0U3MTNGRiIgZD0ibTguMTU2MywxbC02LjMxMjU5LDBsMCwtMWw2LjMxMjU5LDBsMCwxeiIgaWQ9InN2Z18yIi8+CiA8L2c+Cjwvc3ZnPg==)
       0 50%;
   }
 }
@@ -101,7 +101,7 @@ function decline() {
     height: 100%;
     left: 1px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRkZCRjAwIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRTcxM0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4=)
       repeat-y 0 0;
     background-size: 1px 1.2rem;
   }
@@ -116,7 +116,7 @@ function decline() {
     height: 100%;
     right: 1px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRkZCRjAwIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRTcxM0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4=)
       repeat-y 0 0;
     background-size: 1px 1.2rem;
   }

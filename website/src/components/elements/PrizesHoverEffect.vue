@@ -1,6 +1,6 @@
 <template>
   <div :id="`elementsContainer-${props.index}`">
-    <span class="text-terminal-text absolute left-0 -bottom-10 element">€</span>
+    <span class="text-terminal-secondary absolute left-0 -bottom-10 element">€</span>
   </div>
 </template>
 

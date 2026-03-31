@@ -4,17 +4,17 @@
     class="w-full overflow-hidden relative py-3 !mt-40 xl:!mt-9 bg-terminal-section/15"
     data-scroll="prizes"
   >
-    <WordDecoration class="!text-terminal-text/20" />
+    <WordDecoration class="!text-terminal-secondary/30" />
 
     <div class="grid gap-y-12 grid-cols-4 xl:grid-cols-8 px-5 xl:px-10 pt-5 xl:pt-16">
       <div class="col-span-4 xl:col-span-3 flex flex-col gap-y-5">
         <h2
-          class="text-terminal-glow text-shadow-glow text-9xl xl:text-9.5xl 1680xl:text-10xl text-left font-W95FA col-span-7 heading"
+          class="text-terminal-main text-shadow-glow text-9xl xl:text-9.5xl 1680xl:text-10xl text-left font-W95FA col-span-7 heading"
           data-content="Prizes"
         >
           Prizes
         </h2>
-        <p class="text-terminal-text/60 text-1.5xl xl:text-xl !leading-tight text-shadow-glow-low">
+        <p class="text-terminal-secondary text-1.5xl xl:text-xl !leading-tight text-shadow-glow-low">
           The teams ranking first, second and third place will all be awarded prizes in the form of
           multi-brand gift cards of the value foreseen by the position. The value of the prizes will be
           equally divided between each team. The vouchers are personal and will be issued within 15 days after the event.
@@ -41,16 +41,16 @@
             >
               <span class="text-1.25xl tracking-[.005rem] !leading-none block">
                 <span
-                  class="text-xl font-alternate text-terminal-text/60 block xl:group-hover:!text-terminal-text text-shadow-glow-low"
+                  class="text-xl font-alternate text-terminal-secondary block xl:group-hover:!text-terminal-secondary text-shadow-glow-low"
                   >______________________________________________________________________________________________________________________________________________________________________________________________________________</span
                 >
                 <span
-                  class="flex xl:hidden text-terminal-text text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-medium"
+                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-low"
                 >
                   <span class="">3rd</span>
                 </span>
                 <span
-                  class="text-terminal-text/20 hidden xl:block xl:group-hover:text-terminal-text text-nowrap"
+                  class="text-terminal-secondary/30 hidden xl:block xl:group-hover:text-terminal-secondary text-nowrap"
                 >
                   00000000: 01010110 00110001&nbsp;V1<br />
                   00000002: 01000010 01000100&nbsp;BD<br />
@@ -71,16 +71,16 @@
             <div>
               <div class="flex flex-col h-full text-shadow-glow-low">
                 <span
-                  class="text-nowrap text-terminal-text/60 text-2xl xl:text-xl xl:group-hover:!text-terminal-text"
+                  class="text-nowrap text-terminal-secondary text-2xl xl:text-xl xl:group-hover:!text-terminal-secondary"
                   >prize in EUR</span
                 >
                 <span
-                  class="text-terminal-glow text-shadow-glow text-7xl xl:text-6xl text-right block w-full relative -top-2 xl:group-hover:!text-terminal-text"
+                  class="text-terminal-main text-shadow-glow text-7xl xl:text-6xl text-right block w-full relative -top-2 xl:group-hover:!text-terminal-main"
                 >
                   1000
                 </span>
                 <span
-                  class="hidden xl:flex text-terminal-text text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow-medium"
+                  class="hidden xl:flex text-terminal-main text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
                 >
                   <span class="">3rd</span>
                 </span>
@@ -88,7 +88,7 @@
             </div>
           </div>
           <span
-            class="text-xl font-alternate text-terminal-text/20 relative hidden xl:block overflow-hidden"
+            class="text-xl font-alternate text-terminal-secondary/30 relative hidden xl:block overflow-hidden group-hover:!text-terminal-secondary"
             >_______________________________________________</span
           >
         </div>
@@ -110,16 +110,16 @@
             >
               <span class="text-1.25xl tracking-[.005rem] !leading-none block">
                 <span
-                  class="text-xl font-alternate text-terminal-text/60 block xl:group-hover:!text-terminal-text text-shadow-glow-low"
+                  class="text-xl font-alternate text-terminal-secondary block xl:group-hover:!text-terminal-secondary text-shadow-glow-low"
                   >______________________________________________________________________________________________________________________________________________________________________________________________________________</span
                 >
                 <span
-                  class="flex xl:hidden text-terminal-text text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-medium"
+                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-low"
                 >
                   <span class="">2nd</span>
                 </span>
                 <span
-                  class="text-terminal-text/20 hidden xl:block xl:group-hover:text-terminal-text text-nowrap"
+                  class="text-terminal-secondary/30 hidden xl:block xl:group-hover:text-terminal-secondary text-nowrap"
                 >
                   00000000: 01010110 00110001&nbsp;V1<br />
                   00000002: 01000010 01000100&nbsp;BD<br />
@@ -148,16 +148,16 @@
             <div>
               <div class="flex flex-col h-full">
                 <span
-                  class="text-nowrap text-terminal-text/60 text-2xl xl:text-xl xl:group-hover:!text-terminal-text text-shadow-glow-low"
+                  class="text-nowrap text-terminal-secondary text-2xl xl:text-xl xl:group-hover:!text-terminal-secondary text-shadow-glow-low"
                   >prize in EUR</span
                 >
                 <span
-                  class="text-terminal-glow text-shadow-glow text-7xl xl:text-6xl text-right block w-full relative -top-2 xl:group-hover:!text-terminal-text"
+                  class="text-terminal-main text-shadow-glow text-7xl xl:text-6xl text-right block w-full relative -top-2 xl:group-hover:!text-terminal-main"
                 >
                   2500
                 </span>
                 <span
-                  class="hidden xl:flex text-terminal-text text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow-medium"
+                  class="hidden xl:flex text-terminal-main text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
                 >
                   <span class="">2nd</span>
                 </span>
@@ -165,7 +165,7 @@
             </div>
           </div>
           <span
-            class="text-xl font-alternate text-terminal-text/20 relative hidden xl:block overflow-hidden"
+            class="text-xl font-alternate text-terminal-secondary/30 relative hidden xl:block overflow-hidden group-hover:!text-terminal-secondary"
             >_______________________________________________</span
           >
         </div>
@@ -187,16 +187,16 @@
             >
               <span class="text-1.25xl tracking-[.005rem] !leading-none block">
                 <span
-                  class="text-xl font-alternate text-terminal-text/60 block xl:group-hover:!text-terminal-text text-shadow-glow-low"
+                  class="text-xl font-alternate text-terminal-secondary block xl:group-hover:!text-terminal-secondary text-shadow-glow-low"
                   >______________________________________________________________________________________________________________________________________________________________________________________________________________</span
                 >
                 <span
-                  class="flex xl:hidden text-terminal-text text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-medium"
+                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-low"
                 >
                   <span class="">1st</span>
                 </span>
                 <span
-                  class="text-terminal-text/20 hidden xl:block xl:group-hover:text-terminal-text text-nowrap"
+                  class="text-terminal-secondary/30 hidden xl:block xl:group-hover:text-terminal-secondary text-nowrap"
                 >
                   00000000: 01010110 00110001&nbsp;V1<br />
                   00000002: 01000010 01000100&nbsp;BD<br />
@@ -239,16 +239,16 @@
             <div>
               <div class="flex flex-col h-full">
                 <span
-                  class="text-nowrap text-terminal-text/60 text-2xl xl:text-xl xl:group-hover:!text-terminal-text text-shadow-glow-low"
+                  class="text-nowrap text-terminal-secondary text-2xl xl:text-xl xl:group-hover:!text-terminal-secondary text-shadow-glow-low"
                   >prize in EUR</span
                 >
                 <span
-                  class="text-terminal-glow text-shadow-glow text-7xl xl:text-6xl text-right block w-full relative -top-2 xl:group-hover:!text-terminal-text"
+                  class="text-terminal-main text-shadow-glow text-7xl xl:text-6xl text-right block w-full relative -top-2 xl:group-hover:!text-terminal-main"
                 >
                   4000
                 </span>
                 <span
-                  class="hidden xl:flex text-terminal-text text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow-medium"
+                  class="hidden xl:flex text-terminal-main text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
                 >
                   <span class="">1st</span>
                 </span>
@@ -256,7 +256,7 @@
             </div>
           </div>
           <span
-            class="text-xl font-alternate text-terminal-text/20 relative hidden xl:block overflow-hidden"
+            class="text-xl font-alternate text-terminal-secondary/30 relative hidden xl:block overflow-hidden group-hover:!text-terminal-secondary"
             >_______________________________________________</span
           >
         </div>
@@ -270,7 +270,7 @@
       :index="4"
     />
 
-    <WordDecoration class="!text-terminal-text/20 !mt-0" />
+    <WordDecoration class="!text-terminal-secondary/30 !mt-0" />
   </section>
 </template>
 

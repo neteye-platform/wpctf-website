@@ -2,7 +2,7 @@
   <div
     id="mini-terminal"
     draggable="true"
-    class="bg-terminal-bg/20 relative w-full text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal sm:max-w-xl mx-auto xl:max-w-[50ch] min-h-[20rem]"
+    class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal sm:max-w-xl mx-auto xl:max-w-[50ch] min-h-[20rem]"
   >
     <span class="mini-terminal-command relative !leading-[1.1]"></span>
     <span class="mini-terminal-text relative !leading-[1.1]"></span>

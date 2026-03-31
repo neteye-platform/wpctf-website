@@ -1,20 +1,20 @@
 <template>
   <section
-    class="flex flex-col w-full crt px-5 xl:px-10 gap-y-14 xl:gap-y-0 pt-16 pb-16"
+    class="flex flex-col w-full crt px-5 xl:px-10 gap-y-14 xl:gap-y-0 pt-32 pb-32 md:pt-40 md:pb-40"
     data-scroll="about"
   >
     <div class="grid grid-cols-4 xl:grid-cols-8 w-full sm:max-w-xl xl:max-w-full mx-auto">
       <div class="col-span-4"></div>
       <div class="col-span-4 xl:col-span-3 text-white flex flex-col gap-y-6 xl:gap-y-10">
         <h2
-          class="text-terminal-glow text-7xl xl:text-7.5xl text-left font-W95FA flex flex-col text-shadow-glow"
+          class="text-terminal-main text-7xl xl:text-7.5xl text-left font-W95FA flex flex-col text-shadow-glow"
         >
           <span class="heading" data-content="29.Nov"><redacted data="29.Nov"/></span>
           <span class="heading" data-content="Bolzano">NOI Techpark</span>
         </h2>
         <div class="w-full h-[19rem] flex justify-center text-shadow-glow-medium">
           <div
-            class="bg-terminal-bg/20 relative w-full text-terminal-text text-1.5xl xl:text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
+            class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-1.5xl xl:text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
           >
             <span id="about-text-1" class="!leading-[1.1] w-full block">
               Every 1.0s: python -c "import datetime; print(datetime.datetime(<redacted data="2025, 11, 29, 8, 0"/>) -
@@ -34,14 +34,14 @@
       <div class="hidden xl:block col-span-2"></div>
       <div class="col-span-4 xl:col-span-3 text-white flex flex-col gap-y-6 xl:gap-y-10 relative">
         <h2
-          class="text-terminal-glow text-7xl xl:text-7.5xl text-left font-W95FA heading text-shadow-glow"
+          class="text-terminal-main text-7xl xl:text-7.5xl text-left font-W95FA heading text-shadow-glow"
           data-content="The Event"
         >
           The Event
         </h2>
         <div class="w-full flex min-h-[30rem] xl:min-h-[34rem] justify-center">
           <div
-            class="bg-terminal-bg/20 relative w-full text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal text-shadow-glow-medium"
+            class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal text-shadow-glow-medium"
           >
             <div>
               <div id="about-text-2" class="!leading-[1.1] grid grid-cols-12">

@@ -4,11 +4,11 @@
   <defs>
     <style>
       .st0 {
-        fill: #FFD865;
+        fill: white;
       }
 
       .st1 {
-        fill: #000;
+        fill: white;
       }
     </style>
   </defs>

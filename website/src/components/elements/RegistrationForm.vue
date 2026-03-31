@@ -2,7 +2,7 @@
   <div>
 
   <div
-    class="form-container success relative z-20 bg-terminal-bg/20 text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
+    class="form-container success relative z-20 bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
   >
     <form @submit.prevent="handleSubmit">
       <div class="leading-4">+---Registration-Form-------------------------+</div>
@@ -31,7 +31,7 @@
     </form>
   </div>
 
-  <div class="text-terminal-glow text-shadow-glow text-xl hint text-left hidden">
+  <div class="text-terminal-secondary text-shadow-glow text-xl hint text-left hidden">
     "Control can be an illusion. Sometimes you have to lose control to gain control. We're all living in a prison we can't see, touch, or smell. And if you want to break out, you have to break the rules." Mr.Robot
   </div>
 
@@ -96,7 +96,7 @@ form,
     height: 100%;
     display: flex;
     align-items: center;
-    color: #ffbf00;
+    color: #E713FF;
     font-size: 1.25rem;
   }
 }
@@ -115,10 +115,10 @@ form,
 
 .input-group .form-input {
   outline: none;
-  border-bottom: dashed 1px #ffbf00;
+  border-bottom: dashed 1px #E713FF;
 
   &::placeholder {
-    @apply text-terminal-text/40;
+    @apply text-terminal-text/50;
   }
 }
 
@@ -131,7 +131,7 @@ form,
     height: 100%;
     left: 1px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRkZCRjAwIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRTcxM0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4=)
     repeat-y 0 0;
     background-size: 1px 1.2rem;
   }
@@ -146,7 +146,7 @@ form,
     height: 100%;
     right: 1px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRkZCRjAwIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRTcxM0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4=)
     repeat-y 0 0;
     background-size: 1px 1.2rem;
   }

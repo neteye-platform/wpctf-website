@@ -1,20 +1,20 @@
 <template>
   <section
     id="rules"
-    class="flex flex-col w-full xl:pr-10 relative z-40 px-5 xl:px-0 pt-16 pb-16"
+    class="flex flex-col w-full xl:pr-10 relative z-40 px-5 xl:px-0 pt-32 pb-32 md:pt-40 md:pb-40"
     data-scroll="rules"
   >
     <div class="grid grid-cols-4 xl:grid-cols-8 w-full h-full">
       <div class="col-span-2 hidden xl:block"></div>
       <div class="col-span-4 xl:col-span-6 text-white flex flex-col">
         <h2
-          class="text-terminal-glow text-shadow-glow text-7xl xl:text-7.5xl text-left font-W95FA heading mb-7 xl:mb-0"
+          class="text-terminal-main text-shadow-glow text-7xl xl:text-7.5xl text-left font-W95FA heading mb-7 xl:mb-0"
           data-content="Event Rules"
         >
           Event Rules
         </h2>
         <p
-          class="text-terminal-text/50 text-xl !leading-tight mb-10 items-center hidden xl:flex text-shadow-glow-low"
+          class="text-terminal-secondary text-xl !leading-tight mb-10 items-center hidden xl:flex text-shadow-glow-low"
         >
           <span>Navigate Rules using keyboard arrows</span>
           <span class="relative rotate-90 text-2xl inline-block pl-4 pr-3">&gt;</span>
@@ -29,7 +29,7 @@
         class="col-span-4 xl:col-span-6 w-full flex justify-center text-shadow-glow-medium"
       >
         <div
-          class="bg-terminal-bg/20 relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl px-3 pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
+          class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl px-3 pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
         >
           <div class="horizontal-divider mb-2 hidden xl:block"></div>
 
@@ -270,8 +270,7 @@ function scrollPageTo(target: string): void {
     display: block;
     width: 100%;
     height: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxwYXRoIHN0cm9rZT0ibnVsbCIgZmlsbD0iI0ZGQkYwMCIgZD0ibTguMTU2MywxbC02LjMxMjU5LDBsMCwtMWw2LjMxMjU5LDBsMCwxeiIgaWQ9InN2Z18yIi8+CiA8L2c+Cjwvc3ZnPgo=)
-      0 50%;
+    background: repeating-linear-gradient(90deg, #E713FF 0, #E713FF 6.3px, transparent 6.3px, transparent 10px);
   }
 }
 
@@ -284,9 +283,7 @@ function scrollPageTo(target: string): void {
     height: 100%;
     left: 2px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRkZCRjAwIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
-      repeat-y 0 0;
-    background-size: 1px 1.22rem;
+    background: repeating-linear-gradient(180deg, #E713FF 0, #E713FF 12px, transparent 12px, transparent 16px);
   }
 }
 
@@ -299,9 +296,7 @@ function scrollPageTo(target: string): void {
     height: 100%;
     right: 2px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRkZCRjAwIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
-      repeat-y 0 0;
-    background-size: 1px 1.2rem;
+    background: repeating-linear-gradient(180deg, #E713FF 0, #E713FF 12px, transparent 12px, transparent 16px);
   }
 }
 

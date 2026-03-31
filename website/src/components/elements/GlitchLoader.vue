@@ -147,7 +147,7 @@ onMounted(() => {
   .container {
     --color_primary: rgb(010, 010, 010);
     --color_secondary: rgb(255, 255, 255);
-    --color_tertiary: #ffbf00;
+    --color_tertiary: #E713FF;
     position: relative;
     display: flex;
     flex-direction: column;

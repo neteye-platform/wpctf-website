@@ -14,9 +14,9 @@ module.exports = {
       auto: 'auto',
     }),
     textShadow: {
-      'glow': '0px 0px 4px #FFD865, 0px 0px 20px #FFD86566',
-      'glow-medium': '0px 0px 2px #FFBF00, 0px 0px 15px #FFBF004D',
-      'glow-low': '0px 0px 2px #FFBF0080, 0px 0px 10px #FFBF0033'
+      'glow': '0px 0px 4px #E713FF, 0px 0px 20px #E713FF80',
+      'glow-medium': '0px 0px 2px #E713FF80, 0px 0px 15px #E713FF4D',
+      'glow-low': '0px 0px 2px #E713FF80, 0px 0px 10px #E713FF33'
     },
     animation: {
       none: 'none',
@@ -170,10 +170,12 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
       terminal: {
-        text: '#ffbf00',
-        bg: '#a87c00',
+        text: '#E713FF',
+        bg: '#E713FF',
         glow: '#FFD865',
-        section: '#FFE79F'
+        section: '#6164B1',
+        main: '#FFFFFF',
+        secondary: '#B45CFF'
       },
       lowcontrast: {
         grey: '#464646'
@@ -269,9 +271,9 @@ module.exports = {
       xl: ['0 20px 13px rgb(0 0 0 / 0.03)', '0 8px 5px rgb(0 0 0 / 0.08)'],
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
-      'glow': ['0px 0px 4px #FFD865', '0px 0px 20px #FFD86566'],
-      'glow-medium': ['0px 0px 2px #FFBF00', '0px 0px 15px #FFBF004D'],
-      'glow-low': ['0px 0px 2px #FFBF0080', '0px 0px 10px #FFBF0033']
+      'glow': ['0px 0px 4px #E713FF', '0px 0px 20px #E713FF66'],
+      'glow-medium': ['0px 0px 2px #E713FF', '0px 0px 15px #E713FF4D'],
+      'glow-low': ['0px 0px 2px #E713FF80', '0px 0px 10px #E713FF33']
     },
     fill: ({ theme }) => ({
       none: 'none',

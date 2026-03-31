@@ -2,14 +2,14 @@
   <div class="overflow-hidden">
     <WordDecoration
       :word="'SPONSORS'"
-      class="relative z-40 !mb-0 hidden xl:block text-terminal-text/20"
+      class="relative z-40 !mb-0 hidden xl:block text-terminal-secondary/50 xl:text-[20px] text-[16px]"
     />
 
     <div class="w-full relative overflow-hidden z-40 xl:!mt-6">
       <WordDecoration
         :mobile="true"
         :word="'SPONSORS'"
-        class="relative z-40 mb-5 xl:hidden text-terminal-text/20"
+        class="relative z-40 mb-5 xl:hidden text-terminal-secondary/50 xl:text-[20px] text-[16px]"
       />
       <div
         class="inline-block w-screen xl:w-auto overflow-scroll xl:overflow-hidden text-nowrap !mt-0 hide-scrollbar"
@@ -24,7 +24,7 @@
               target="_self"
             >
             <span
-              class="text-terminal-text/40 uppercase"
+              class="text-terminal-secondary/80 uppercase xl:text-[20px] text-[16px]"
               :class="[
                 index === 0 && 'ml-5 xl:ml-10',
                 index === sponsorsList.length - 1 && 'mr-5 xl:mr-10'
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <DashDecoration class="relative z-40 !-mt-2 xl:!mt-0 text-terminal-text/20" />
+    <DashDecoration class="relative z-40 !-mt-2 xl:!mt-2 text-terminal-secondary/50 xl:text-[20px] text-[16px]" />
   </div>
 </template>
 
@@ -112,6 +112,6 @@ const props = defineProps({
 }
 
 .object-contain {
-  @apply fill-terminal-text;
+  @apply fill-terminal-secondary;
 }
 </style>

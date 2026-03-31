@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="!props.mobile"
-    class="relative text-nowrap text-lowcontrast-grey text-2xl xl:text-xl left-[45%] -translate-x-1/2"
+    class="relative text-nowrap text-lowcontrast-grey text-[16px] xl:text-[20px] left-[45%] -translate-x-1/2"
   >
     ___________________________________{{ props.word }}___________________________________{{
       props.word
@@ -13,7 +13,7 @@
   </div>
   <div
     v-else
-    class="flex justify-center overflow-hidden text-nowrap text-lowcontrast-grey text-2xl xl:text-xl"
+    class="flex justify-center overflow-hidden text-nowrap text-lowcontrast-grey text-[16px] xl:text-[20px]"
   >
     <span class="flex">
       ______________________________________________________________________________________________________________________________________________________________________________________{{

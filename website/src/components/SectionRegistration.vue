@@ -1,24 +1,24 @@
 <template>
   <section
     id="registration"
-    class="bg-black flex flex-col w-full px-5 xl:pl-0 xl:pr-10 relative overflow-hidden !mt-0 x z-40 crt pb-24 pt-8 xl:pt-0"
+    class="bg-[#12121A] flex flex-col w-full px-5 xl:pl-0 xl:pr-10 relative overflow-hidden !mt-0 x z-40 crt pt-32 pb-32 md:pb-60 md:pt-60 "
     data-scroll="register"
   >
     <div
-      class="w-full flex justify-center pt-32 pb-16 xl:pt-24 xl:pb-8 sm:max-w-xl xl:max-w-full mx-auto"
+      class="w-full flex justify-center sm:max-w-xl xl:max-w-full mx-auto"
     >
       <div
         class="flex text-white flex-col self-center registration-container text-center"
         v-if="isRegistrationOpen()"
       >
         <h2
-          class="text-terminal-glow text-shadow-glow text-7xl xl:text-5.25xl font-W95FA heading pb-10 xl:pb-10 registration-title"
+          class="text-terminal-main text-shadow-glow text-7xl xl:text-5.25xl font-W95FA heading pb-10 xl:pb-10 registration-title"
           data-content="Registration"
         >
           Registration
         </h2>
         <div class="text-terminal-text/60 text-3xl text relative text-shadow-glow-low justify-center">
-          <RegistrationForm />
+          <RegistrationForm /> 
         </div>
       </div>
 

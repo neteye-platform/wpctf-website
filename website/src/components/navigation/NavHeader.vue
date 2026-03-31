@@ -2,7 +2,7 @@
   <nav class="py-5 xl:py-8 relative top-0 z-10 w-full text-shadow-glow-medium">
     <ul class="flex w-full items-center justify-between">
       <li class="w-full xl:w-auto">
-        <a href="/" class="text-white text-3xl text-nowrap xl:hover:text-terminal-text">
+        <a href="/" class="text-terminal-main text-3xl text-nowrap xl:hover:text-terminal-text">
           <NavLogo />
         </a>
       </li>
@@ -12,7 +12,7 @@
             <a
               href="https://www.instagram.com/wp.ctf/"
               target="_blank"
-              class="text-terminal-text uppercase hover:text-white"
+              class="text-terminal-main uppercase hover:text-terminal-text"
             >
               <svg
                 width="50"
@@ -49,7 +49,7 @@
                     <feComposite in2="hardAlpha" operator="out" />
                     <feColorMatrix
                       type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 0.74902 0 0 0 0 0 0 0 0 1 0"
+                      values="0 0 0 0 0.90588 0 0 0 0 0.07451 0 0 0 0 1 0 0 0 1 0"
                     />
                     <feBlend
                       mode="normal"
@@ -67,7 +67,7 @@
                     <feComposite in2="hardAlpha" operator="out" />
                     <feColorMatrix
                       type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 0.74902 0 0 0 0 0 0 0 0 0.3 0"
+                      values="0 0 0 0 0.90588 0 0 0 0 0.07451 0 0 0 0 1 0 0 0 0.3 0"
                     />
                     <feBlend
                       mode="normal"
@@ -89,7 +89,7 @@
             <a
               href="https://discord.gg/JAPhDT8knm"
               target="_blank"
-              class="text-terminal-text uppercase hover:text-white"
+              class="text-terminal-main uppercase hover:text-terminal-text"
             >
               <svg
                 width="50"
@@ -126,7 +126,7 @@
                     <feComposite in2="hardAlpha" operator="out" />
                     <feColorMatrix
                       type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 0.74902 0 0 0 0 0 0 0 0 1 0"
+                      values="0 0 0 0 0.90588 0 0 0 0 0.07451 0 0 0 0 1 0 0 0 1 0"
                     />
                     <feBlend
                       mode="normal"
@@ -144,7 +144,7 @@
                     <feComposite in2="hardAlpha" operator="out" />
                     <feColorMatrix
                       type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 0.74902 0 0 0 0 0 0 0 0 0.3 0"
+                      values="0 0 0 0 0.90588 0 0 0 0 0.07451 0 0 0 0 1 0 0 0 0.3 0"
                     />
                     <feBlend
                       mode="normal"
@@ -166,7 +166,7 @@
             <a
               href="https://github.com/WuerthPhoenix/wpctf2025"
               target="_blank"
-              class="text-terminal-text uppercase hover:text-white"
+              class="text-terminal-main uppercase hover:text-terminal-text"
             >
               <svg
                 width="50"
@@ -205,7 +205,7 @@
                     <feComposite in2="hardAlpha" operator="out" />
                     <feColorMatrix
                       type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 0.74902 0 0 0 0 0 0 0 0 1 0"
+                      values="0 0 0 0 0.90588 0 0 0 0 0.07451 0 0 0 0 1 0 0 0 1 0"
                     />
                     <feBlend
                       mode="normal"
@@ -223,7 +223,7 @@
                     <feComposite in2="hardAlpha" operator="out" />
                     <feColorMatrix
                       type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 0.74902 0 0 0 0 0 0 0 0 0.3 0"
+                      values="0 0 0 0 0.90588 0 0 0 0 0.07451 0 0 0 0 1 0 0 0 0.3 0"
                     />
                     <feBlend
                       mode="normal"
@@ -242,7 +242,7 @@
             </a>
           </li>
           <li class="flex items-center">
-            <a href="/sponsors" class="button text-terminal-text uppercase hover:text-white">
+            <a href="/sponsors" class="button text-terminal-main uppercase hover:text-terminal-text text-shadow-glow">
               Sponsors
             </a>
           </li>
@@ -251,7 +251,7 @@
               href="/#register"
               @click="scrollPageTo('register')"
               type="button"
-              class="button bg-terminal-text text-black uppercase hover:bg-white"
+              class="button bg-terminal-main text-black uppercase hover:bg-terminal-text"
             >
               Register
             </a>

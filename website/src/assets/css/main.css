@@ -19,7 +19,7 @@
 
 body,
 html {
-  @apply bg-black;
+  @apply bg-[#12121A];
   font-family: 'VT323', monospace;
 }
 

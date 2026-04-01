@@ -18,7 +18,7 @@
           Registration
         </h2>
         <div class="text-terminal-text/60 text-3xl text relative text-shadow-glow-low justify-center">
-          <RegistrationForm /> 
+          <RegistrationForm />
         </div>
       </div>
 

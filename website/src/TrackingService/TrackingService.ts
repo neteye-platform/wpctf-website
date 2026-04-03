@@ -12,18 +12,20 @@ class TrackingServiceWrapper {
   }
 
   public init(app: App, router: Router): void {
-    app.use(VueMatomo, {
-      host: 'https://analytics.neteye.cloud',
-      siteId: 4,
-      enableLinkTracking: true
-    })
+    try {
+      app.use(VueMatomo, {
+        host: 'https://analytics.neteye.cloud',
+        siteId: 4,
+        enableLinkTracking: true
+      })
+    } catch {
+      // Do not block app boot when analytics plugin setup fails.
+      return
+    }
 
-    // @ts-ignore
-    window._paq.push(['enableHeartBeatTimer'])
-    // @ts-ignore
-    window._paq.push(['requireConsent'])
-    // @ts-ignore
-    window._paq.push(['requireCookieConsent'])
+    this.safePush(['enableHeartBeatTimer'])
+    this.safePush(['requireConsent'])
+    this.safePush(['requireCookieConsent'])
 
     if (this.userAccepted()) {
       this.consent()
@@ -40,10 +42,8 @@ class TrackingServiceWrapper {
 
   public consent(): void {
     cookies.set('user-accepts-cookies', 'true', 3650, '/', window.location.hostname, true, 'strict')
-    // @ts-ignore
-    window._paq.push(['setConsentGiven'])
-    // @ts-ignore
-    window._paq.push(['setCookieConsentGiven'])
+    this.safePush(['setConsentGiven'])
+    this.safePush(['setCookieConsentGiven'])
   }
 
   public decline() {
@@ -60,22 +60,27 @@ class TrackingServiceWrapper {
 
   public trackPage(path: string | null = null): void {
     if (path) {
-      // @ts-ignore
-      window._paq.push(['trackPageView', path])
+      this.safePush(['trackPageView', path])
     } else {
-      // @ts-ignore
-      window._paq.push(['trackPageView'])
+      this.safePush(['trackPageView'])
     }
   }
 
   public eventRegistrationCredentials(credentials: string): void {
-    //@ts-ignore
-    window._paq.push(["trackEvent", "registration", "credentials", credentials]);
+    this.safePush(['trackEvent', 'registration', 'credentials', credentials])
   }
 
   public eventRegistrationSuccess(): void {
-    //@ts-ignore
-    window._paq.push(["trackEvent", "registration", "success"]);
+    this.safePush(['trackEvent', 'registration', 'success'])
+  }
+
+  private safePush(entry: unknown[]): void {
+    const queue = (window as Window & { _paq?: unknown[] })._paq
+    if (!Array.isArray(queue)) {
+      return
+    }
+
+    queue.push(entry)
   }
 }
 

@@ -3,14 +3,14 @@ import { test, expect } from '@playwright/test'
 test.describe('Home Page', () => {
   test('should load and display the page title', async ({ page }) => {
     await page.goto('/')
-    await expect(page).toHaveTitle(/CTF.*Capture the Flag.*2025/)
+    await expect(page).toHaveTitle(/CTF.*Capture the Flag.*2026/)
   })
 
   test('should display the hero heading', async ({ page }) => {
     await page.goto('/')
     const heroHeading = page.locator('#hero-section h1')
     await expect(heroHeading).toBeVisible()
-    await expect(heroHeading).toHaveText('WP CTF 2025')
+    await expect(heroHeading).toHaveText('WP CTF 2026')
   })
 
   test('should display main sections', async ({ page }) => {

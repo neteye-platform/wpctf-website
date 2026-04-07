@@ -5,7 +5,7 @@
         <header
           class="font-alternate flex justify-start whitespace-nowrap !mx-auto text-terminal-text text-left pb-3"
         >
-          <span class="text-7xl sm:text-7xl flex shadow-outline mb-0">WP CTF 2025</span>
+          <span class="text-7xl sm:text-7xl flex shadow-outline mb-0">WP CTF 2026</span>
         </header>
         <MiniTerminal />
       </div>

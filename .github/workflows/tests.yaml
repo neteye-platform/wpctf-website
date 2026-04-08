@@ -10,7 +10,7 @@ jobs:
       contents: read
       packages: write
 
-    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@ddb6493160c38f9f1244d911f0d47147520d5e2f # main
+    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@6516f14ca8e986a00e6b69ddfacfefd116ea2377 # main
     with:
       working-directory: "."
       dockerfile-path: "./Dockerfile"

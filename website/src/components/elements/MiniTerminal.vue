@@ -37,7 +37,7 @@ onMounted(() => {
     '$ wpctf --edition 2026 -h<br>' +
     'Presented by: Würth IT Italy<br>' +
     'Location: NOI Techpark in Bolzano<br>' +
-    'Date: <span data-redacted="Sat Nov 28 08:00:00 AM CET 2026">[REDACTED]</span>'
+    'Date: Sat Nov 28 08:00:00 AM CET 2026'
 
   text2 =
     '_____________________________________________<br>' +

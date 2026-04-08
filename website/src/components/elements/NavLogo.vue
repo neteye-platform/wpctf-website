@@ -5,7 +5,7 @@
       <span
           class="font-alternate text-2xl sm:text-3xl pt-2 !leading-none text-shadow-glow-medium group-hover:xl:!text-terminal-secondary"
       >
-        WP CTF 2025
+        WP CTF 2026
       </span>
       <span class="font-alternate text-base sm:text-lg !leading-none block mt-0 text-terminal-secondary text-shadow-glow-medium">
         play. pwn. peak.

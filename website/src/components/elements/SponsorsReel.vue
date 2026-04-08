@@ -1,17 +1,17 @@
 <template>
   <div class="overflow-hidden">
     <WordDecoration
-      :word="'SPONSORS'"
+      :word="'WP_CTF_2026'"
       class="relative z-40 !mb-0 hidden xl:block text-terminal-secondary/50 text-base"
     />
 
     <div class="w-full relative overflow-hidden z-40 xl:!mt-6">
       <WordDecoration
         :mobile="true"
-        :word="'SPONSORS'"
+        :word="'WP_CTF_2026'"
         class="relative z-40 mb-5 xl:hidden text-terminal-secondary/50 text-base"
       />
-      <div
+      <!-- <div
         class="inline-block w-screen xl:w-auto overflow-scroll xl:overflow-hidden text-nowrap !mt-0 hide-scrollbar"
       >
         <div
@@ -45,10 +45,10 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <DashDecoration class="relative z-40 !mt-2 xl:!mt-2 text-terminal-secondary/50 text-base" />
+    <!-- <DashDecoration class="relative z-40 !mt-2 xl:!mt-2 text-terminal-secondary/50 text-base" /> -->
   </div>
 </template>
 

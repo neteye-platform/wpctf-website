@@ -28,23 +28,24 @@
       >
         <div class="w-full">
           <h2
-              class="text-terminal-glow text-shadow-glow text-7xl xl:text-5.25xl font-W95FA heading pb-10 xl:pb-10"
+              class="text-terminal-text text-shadow-glow text-7xl xl:text-5.25xl font-W95FA heading pb-10 xl:pb-10"
               data-content="Registration"
           >
             Registration
           </h2>
-          <div class="text-terminal-text/60 text-3xl text relative text-shadow-glow-low">
-            <p class="mb-6">
-              Registration will open soon...
-            </p>
-            <a
-                href="https://assets-eur.mkt.dynamics.com/657de2ab-55d4-4044-924d-9ecbe20bfe9f/digitalassets/standaloneforms/c4200ae6-27fb-ef11-bae2-002248a3cd20?readableEventId=WP_CTF_2025_-_Preregistration2670295690"
-                target="_blank"
-                type="button"
-                class="button bg-terminal-text text-black uppercase hover:bg-white"
-            >
-              Notify me
-            </a>
+
+          <div class="text-terminal-text text-3xl text relative text-shadow-glow-low">
+            <div class="relative z-20 text-left text-terminal-text text-xl !leading-6 formatted-text font-terminal w-fit mx-auto">
+                <div>+--------------------------------------------------+</div>
+                <div class="flex justify-between"><span>| &nbsp;REGISTRATION WILL SOON OPEN</span><span>|</span></div>
+                <div class="flex justify-between"><span>| &nbsp;COME BACK LATER</span><span>|</span></div>
+                <div class="flex justify-between"><span>|</span><span>|</span></div>
+                <div class="flex justify-between"><span>|</span><span>|</span></div>
+                <div class="flex justify-between"><span>|</span><span>|</span></div>
+                <div class="flex justify-between"><span>|</span><span>|</span></div>
+                <div class="flex justify-between"><span>|</span><span>|</span></div>
+                <div>+--------------------------------------------------+</div>
+            </div>
           </div>
         </div>
       </div>
@@ -57,7 +58,7 @@
 import RegistrationForm from "@/components/elements/RegistrationForm.vue";
 
 function isRegistrationOpen() {
-  const registrationOpenDate = new Date('2025-07-14T00:00:00Z');
+  const registrationOpenDate = new Date('2026-07-14T00:00:00Z');
   const currentDate = new Date();
   return currentDate >= registrationOpenDate;
 }

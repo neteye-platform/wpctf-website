@@ -9,7 +9,7 @@
 
 <script lang="ts">
 export default {
-  title: 'WP CTF 2025'
+  title: 'WP CTF 2026'
 }
 </script>
 

@@ -27,7 +27,7 @@
 const props = defineProps({
   word: {
     type: String,
-    default: 'WP_CTF_2025'
+    default: 'WP_CTF_2026'
   },
   mobile: {
     type: Boolean,

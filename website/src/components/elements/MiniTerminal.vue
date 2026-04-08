@@ -34,10 +34,10 @@ onMounted(() => {
   let text1, text2, text3
 
   text1 =
-    '$ wpctf --edition 2025 -h<br>' +
+    '$ wpctf --edition 2026 -h<br>' +
     'Presented by: Würth IT Italy<br>' +
     'Location: NOI Techpark in Bolzano<br>' +
-    'Date: <span data-redacted="Sat Nov 29 08:00:00 AM CET 2025">[REDACTED]</span>'
+    'Date: Sat Nov 28 08:00:00 AM CET 2026'
 
   text2 =
     '_____________________________________________<br>' +

@@ -55,7 +55,7 @@ const errorMessage = ref('')
 const registrationLink = ref('')
 const { cookies } = useCookies()
 const registrationTokenCookieName = 'registration-token'
-const registrationDomain = "https://registration.wpctf.it"
+const registrationDomain = "https://2026.registration.wpctf.it"
 
 const getAuthToken = async (): Promise<boolean> => {
   try {

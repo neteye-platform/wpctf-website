@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.1.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.0.1...v2026.1.0) (2026-05-12)
+
+
+### Features
+
+* update registration form for 2026 ([#49](https://github.com/neteye-platform/wpctf-website/issues/49)) ([0026ac4](https://github.com/neteye-platform/wpctf-website/commit/0026ac4077d40b14ee9a0a1a56ce3f5d2376f5f0))
+
 ## [2026.0.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.0.0...v2026.0.1) (2026-04-08)
 
 

@@ -58,7 +58,7 @@
 import RegistrationForm from "@/components/elements/RegistrationForm.vue";
 
 function isRegistrationOpen() {
-  const registrationOpenDate = new Date('2026-05-07T00:00:00Z');
+  const registrationOpenDate = new Date('2026-05-13T00:00:00Z');
   const currentDate = new Date();
   return currentDate >= registrationOpenDate;
 }

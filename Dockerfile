@@ -1,4 +1,4 @@
-FROM node:25.9.0@sha256:3953ec6a2c10154a58ccf4ba48083ddfe3f8641d63f0d1d5cb8a4a78169123a7 AS build_image
+FROM node:25.9.0@sha256:358f419edb0a07e6fa2d9c127c54ac2f184edaf53732551438fdcd1ed72702c7 AS build_image
 
 WORKDIR /app/website
 
@@ -13,7 +13,7 @@ COPY website/ .
 # build app for production with minification
 RUN npm run build
 
-FROM node:25.9.0@sha256:3953ec6a2c10154a58ccf4ba48083ddfe3f8641d63f0d1d5cb8a4a78169123a7
+FROM node:25.9.0@sha256:358f419edb0a07e6fa2d9c127c54ac2f184edaf53732551438fdcd1ed72702c7
 
 WORKDIR /app/website/
 

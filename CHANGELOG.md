@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.1.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.1.0...v2026.1.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#50](https://github.com/neteye-platform/wpctf-website/issues/50)) ([378b04d](https://github.com/neteye-platform/wpctf-website/commit/378b04d8ece52fca4bce2063d5c75f1f270af415))
+* update 2026 registration URL ([#56](https://github.com/neteye-platform/wpctf-website/issues/56)) ([a54432b](https://github.com/neteye-platform/wpctf-website/commit/a54432b618acb9509466740e04f0a246a4e8c1b6))
+
 ## [2026.1.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.0.1...v2026.1.0) (2026-05-12)
 
 

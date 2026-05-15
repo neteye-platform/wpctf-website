@@ -6,9 +6,9 @@
           <NavLogo />
         </a>
       </li>
-      <li class="hidden xl:block">
+      <li class="block">
         <ul class="flex gap-x-4">
-          <li>
+          <li class="hidden sm:block">
             <a
               href="https://www.instagram.com/wp.ctf/"
               target="_blank"
@@ -85,7 +85,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="hidden sm:block">
             <a
               href="https://discord.gg/JAPhDT8knm"
               target="_blank"
@@ -162,7 +162,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="hidden sm:block">
             <a
               href="https://github.com/WuerthPhoenix/wpctf2025"
               target="_blank"
@@ -241,7 +241,7 @@
               </svg>
             </a>
           </li>
-          <li class="flex items-center">
+          <li class="hidden md:flex items-center">
             <a href="/sponsors" class="button text-terminal-main uppercase hover:text-terminal-text text-shadow-glow">
               Sponsors
             </a>

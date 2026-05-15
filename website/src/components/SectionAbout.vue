@@ -72,11 +72,8 @@
                   All you need is your laptop and the willingness to compete!
                   We'll take care of the rest: breakfast,
                   lunch and snacks will be provided to make sure you
-                  have all the necessary energy to capture as all the
-                  flags you can. But wait, that's not all! After the
-                  competition there will be an aperitif to get to know
-                  all participants and the organizers of the event,
-                  allowing you expand your network!
+                  have all the necessary energy to capture all the flags. But wait, that's not all! After the
+                  competition there will be an aperitif so you can get to know all the event participants and organizers, allowing you to expand your network!
                 </div>
 
                 <div class="col-span-1 xl:col-span-2"></div>

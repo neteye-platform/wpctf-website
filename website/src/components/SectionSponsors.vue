@@ -49,7 +49,7 @@
           <br />
           <br />
           <a href="mailto:marketing.italy@wuerth-it.it" class="xl:hover:text-white"
-            >>> Write at: marketing.italy@wuerth-it.it
+            >>> Write to: marketing.italy@wuerth-it.it
           </a>
         </p>
       </div>

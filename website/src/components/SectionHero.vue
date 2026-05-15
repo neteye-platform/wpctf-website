@@ -1,13 +1,15 @@
 <template>
   <section
     id="hero-section"
-    class="flex flex-col w-full !mt-0 xl:h-screen xl:min-h-[59.5rem] crt"
+    class="relative flex flex-col w-full !mt-0 xl:h-screen xl:min-h-[59.5rem] crt"
     data-scroll="hero"
   >
     <NavHeader class="px-5 xl:px-10" />
-    <div class="w-full flex flex-col pt-8 1680xl:pt-12 pb-8 1680xl:pb-10 px-5 xl:px-10 relative">
+    <RoboBanner @click="isInfoDialogOpen = true" />
+    <InfoDialog v-model="isInfoDialogOpen" />
+    <div class="w-full flex flex-col pt-44 lg:pt-8 xl:pt-12 pb-5 1680xl:pb-10 px-5 xl:px-10 relative">
       <h1
-        class="text-terminal-main text-7.75xl xl:text-9.5xl 1680xl:text-10xl text-right font-W95FA heading text-shadow-glow inline-flex self-end"
+        class="text-terminal-main leading-none text-[clamp(1rem,16vw,8rem)] md:text-[8rem] lg:text-9.5xl 1680xl:text-10xl text-left lg:text-right font-W95FA heading text-shadow-glow inline-flex lg:self-end"
         data-content="WP CTF 2026"
       >
         WP CTF 2026
@@ -21,18 +23,18 @@
       </div>
 
       <div
-        class="col-span-4 xl:col-span-4 justify-end flex order-1 xl:order-2 text-shadow-glow-low"
+        class="col-span-4 xl:col-span-4 lg:justify-end flex order-1 xl:order-2 text-shadow-glow-low"
       >
         <p
-          class="xl:max-w-[75ch] text-terminal-secondary text-1.5xl xl:text-3xl font-normal text relative !leading-none gap-y-8 text-right"
+          class="max-w-[40rem] lg:max-w-[75ch] text-terminal-secondary text-1.5xl lg:text-3xl font-normal text relative !leading-none gap-y-8 lg:text-right"
         >
           <span class="block"
-            >The WP capture the flag  is back for another thrilling round on <redacted data="November 28th"/> at NOI Techpark in
+            >The WP capture the flag is back for another thrilling round on <redacted data="November 28th"/> at NOI Techpark in
             Bolzano! This year marks a HACK-tacular fourth edition, packed with mind-bending
             challenges designed to test your cyber skills.</span
           >
           <br />
-          <span class="flex items-start justify-end">
+          <span class="flex items-start lg:justify-end">
             <span class="text-7.5xl -mt-2">5</span>
             <span class="text-3xl">th Edition</span>
           </span>
@@ -44,10 +46,15 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import MiniTerminal from '@/components/elements/MiniTerminal.vue'
 import SponsorsReel from '@/components/elements/SponsorsReel.vue'
 import NavHeader from '@/components/navigation/NavHeader.vue'
 import Redacted from "@/components/elements/Redacted.vue";
+import RoboBanner from '@/components/elements/RoboBanner.vue'
+import InfoDialog from '@/components/elements/InfoDialog.vue'
+
+const isInfoDialogOpen = ref(false)
 </script>
 
 <style lang="postcss" scoped></style>

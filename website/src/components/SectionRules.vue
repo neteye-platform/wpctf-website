@@ -4,6 +4,14 @@
     class="flex flex-col w-full xl:pr-10 relative z-40 px-5 xl:px-0 pt-32 pb-32 md:pt-40 md:pb-40"
     data-scroll="rules"
   >
+    <RoboBanner
+      @click="isInfoDialogOpen = true"
+      position-class="hidden sm:block right-[-1.5rem] md:right-6 xl:right-[15vw] mt-[-1.5rem] md:mt-[-2rem] xl:mt-2"
+      scale-class="scale-75 md:scale-100"
+      rotate-class="rotate-[-7deg]"
+      origin-class="origin-center"
+    />
+    <InfoDialog v-model="isInfoDialogOpen" />
     <div class="grid grid-cols-4 xl:grid-cols-8 w-full h-full">
       <div class="col-span-2 hidden xl:block"></div>
       <div class="col-span-4 xl:col-span-6 text-white flex flex-col">
@@ -87,12 +95,10 @@
               <div class="col-span-2 left-start hidden xl:block">
                 <br />
                 Description
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 Presented by
                 <br />
                 Würth IT Italy
-                <br />
-                <br />
                 <br />
               </div>
               <div class="col-span-6 grid-cols-12 hidden xl:grid">
@@ -102,7 +108,7 @@
                   <br />
                   <br />
                   <br />
-                  <span class="max-w-[46ch] block">
+                  <span class="max-w-[52ch] block">
                     {{ rules[currentRuleIndex]?.description }}
                   </span>
                 </div>
@@ -150,11 +156,15 @@
 
 <script setup lang="ts">
 import { inject, ref } from 'vue'
+import RoboBanner from '@/components/elements/RoboBanner.vue'
+import InfoDialog from '@/components/elements/InfoDialog.vue'
+
+const isInfoDialogOpen = ref(false)
 
 const rules = [
   {
     id: 0,
-    title: 'Compete - Teams will tackle a series of security-related.',
+    title: 'Compete - Teams will tackle a series of security-related challenges.',
     size: '144 B',
     description:
       'Each team works independently to solve a variety of cybersecurity challenges. A maximum of five people per team is allowed.'
@@ -233,6 +243,13 @@ const rules = [
     size: '79 B',
     description:
       'At the end of the event, all points will be totaled. The team with the highest score will be declared the winner.'
+  },
+  {
+    id: 11,
+    title: 'Agentic AI Is Not Permitted – Solve the Challenges Yourself',
+    size: '86 B',
+    description:
+      'This CTF is designed for humans who want to learn cybersecurity by doing. We reward technical understanding, creativity, persistence, and real hacking skill – not the ability to outsource work to an automated system. We believe AI is the future of productivity and security work, and we encourage its use in professional contexts. But this competition exists to build skills, not to test who has access to the best model. Using an LLM as a faster search tool is acceptable. Letting an agentic AI reason, experiment, and solve challenges for you is not – it undermines the learning this CTF exists to promote. Solve it yourself.'
   }
 ]
 

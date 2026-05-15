@@ -1,0 +1,155 @@
+<svg width="62" height="52" viewBox="0 0 62 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .frame {
+    opacity: 0;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, end);
+  }
+  .frame-2 { animation-name: f2; }
+  .frame-3 { animation-name: f3; }
+  .frame-4 { animation-name: f4; }
+  .frame-5 { animation-name: f5; }
+  .frame-6 { animation-name: f6; }
+  .frame-7 { animation-name: f7; }
+  .frame-8 { animation-name: f8; }
+  .frame-9 { animation-name: f9; }
+  @keyframes f2 { 0%, 100% { opacity: 0; } 60%   { opacity: 1; } 97.5% { opacity: 0; } }
+  @keyframes f3 { 0%, 100% { opacity: 0; } 62.5% { opacity: 1; } 95%   { opacity: 0; } }
+  @keyframes f4 { 0%, 100% { opacity: 0; } 65%   { opacity: 1; } 92.5% { opacity: 0; } }
+  @keyframes f5 { 0%, 100% { opacity: 0; } 67.5% { opacity: 1; } 90%   { opacity: 0; } }
+  @keyframes f6 { 0%, 100% { opacity: 0; } 70%   { opacity: 1; } 87.5% { opacity: 0; } }
+  @keyframes f7 { 0%, 100% { opacity: 0; } 72.5% { opacity: 1; } 85%   { opacity: 0; } }
+  @keyframes f8 { 0%, 100% { opacity: 0; } 75%   { opacity: 1; } 82.5% { opacity: 0; } }
+  @keyframes f9 { 0%, 100% { opacity: 0; } 77.5% { opacity: 1; } 80%   { opacity: 0; } }
+</style>
+
+<g>
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="37.5" y="24.5" width="6" height="6" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+  <rect x="18.5" y="24.5" width="6" height="6" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+  <rect x="22.75" y="41.75" width="16.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="40.75" y="38.75" width="1.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+</g>
+
+<g class="frame frame-2">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="37.5" y="25.5" width="6" height="4" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+  <rect x="18.5" y="25.5" width="6" height="4" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+  <rect x="22.75" y="41.75" width="16.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="40.75" y="38.75" width="1.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+</g>
+
+<g class="frame frame-3">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="22.75" y="41.75" width="16.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="40.75" y="38.75" width="1.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+</g>
+
+<g class="frame frame-4">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="22.75" y="41.75" width="16.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+</g>
+
+<g class="frame frame-5">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="24.25" y="40.25" width="13.5" height="2.5" fill="#FCFF9D" stroke="black" stroke-width="2.5"/>
+</g>
+
+<g class="frame frame-6">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="25.5" y="38.5" width="11" height="5" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+</g>
+
+<g class="frame frame-7">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="26.5" y="36.5" width="9" height="7" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+</g>
+
+<g class="frame frame-8">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="27.5" y="35.5" width="7" height="9" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+</g>
+
+<g class="frame frame-9">
+  <path d="M54 20H62V34H54V20Z" fill="#FCFF9D"/>
+  <path d="M0 20H8V34H0V20Z" fill="#FCFF9D"/>
+  <path d="M6 12H56V52H6V12Z" fill="#FCFF9D"/>
+  <path d="M56 12V52H6V12H56ZM9 49H53V15H9V49Z" fill="black"/>
+  <path d="M62 20V34H54V20H62ZM57 31H59V23H57V31Z" fill="black"/>
+  <path d="M43 0V12H40V0H43Z" fill="black"/>
+  <path d="M24 0V12H21V0H24Z" fill="black"/>
+  <path d="M8 20V34H0V20H8ZM3 31H5V23H3V31Z" fill="black"/>
+  <rect x="36.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="17.75" y="26.75" width="7.5" height="1.5" fill="#FCFF9D" stroke="black" stroke-width="1.5"/>
+  <rect x="27.5" y="34.5" width="7" height="11" fill="#FCFF9D" stroke="black" stroke-width="3"/>
+</g>
+</svg>

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.2.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.1.1...v2026.2.0) (2026-05-15)
+
+
+### Features
+
+* add humans only banner ([#58](https://github.com/neteye-platform/wpctf-website/issues/58)) ([495a0bc](https://github.com/neteye-platform/wpctf-website/commit/495a0bc2404b5b1aeb3e980b137e2b656fce8983))
+
 ## [2026.1.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.1.0...v2026.1.1) (2026-05-13)
 
 

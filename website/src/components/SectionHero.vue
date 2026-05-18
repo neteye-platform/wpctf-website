@@ -30,7 +30,7 @@
         >
           <span class="block"
             >The WP capture the flag is back for another thrilling round on <redacted data="November 28th"/> at NOI Techpark in
-            Bolzano! This year marks a HACK-tacular fourth edition, packed with mind-bending
+            Bolzano! This year marks a HACK-tacular fifth edition, packed with mind-bending
             challenges designed to test your cyber skills.</span
           >
           <br />

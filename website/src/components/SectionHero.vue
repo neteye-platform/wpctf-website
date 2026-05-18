@@ -7,7 +7,9 @@
     <NavHeader class="px-5 xl:px-10" />
     <RoboBanner @click="isInfoDialogOpen = true" />
     <InfoDialog v-model="isInfoDialogOpen" />
-    <div class="w-full flex flex-col pt-44 lg:pt-8 xl:pt-12 pb-5 1680xl:pb-10 px-5 xl:px-10 relative">
+    <div
+      class="w-full flex flex-col pt-44 lg:pt-8 xl:pt-12 pb-5 1680xl:pb-10 px-5 xl:px-10 relative"
+    >
       <h1
         class="text-terminal-main leading-none text-[clamp(1rem,16vw,8rem)] md:text-[8rem] lg:text-9.5xl 1680xl:text-10xl text-left lg:text-right font-W95FA heading text-shadow-glow inline-flex lg:self-end"
         data-content="WP CTF 2026"
@@ -29,9 +31,10 @@
           class="max-w-[40rem] lg:max-w-[75ch] text-terminal-secondary text-1.5xl lg:text-3xl font-normal text relative !leading-none gap-y-8 lg:text-right"
         >
           <span class="block"
-            >The WP capture the flag is back for another thrilling round on <Redacted data="November 28th"/> at NOI Techpark in
-            Bolzano! This year marks a HACK-tacular fifth edition, packed with mind-bending
-            challenges designed to test your cyber skills.</span
+            >The WP capture the flag is back for another thrilling round on
+            <Redacted data="November 28th" /> at NOI Techpark in Bolzano! This year marks a
+            HACK-tacular fifth edition, packed with mind-bending challenges designed to test your
+            cyber skills.</span
           >
           <br />
           <span class="flex items-start lg:justify-end">
@@ -50,7 +53,7 @@ import { ref } from 'vue'
 import MiniTerminal from '@/components/elements/MiniTerminal.vue'
 import SponsorsReel from '@/components/elements/SponsorsReel.vue'
 import NavHeader from '@/components/navigation/NavHeader.vue'
-import Redacted from '@/components/elements/Redacted.vue';
+import Redacted from '@/components/elements/Redacted.vue'
 import RoboBanner from '@/components/elements/RoboBanner.vue'
 import InfoDialog from '@/components/elements/InfoDialog.vue'
 

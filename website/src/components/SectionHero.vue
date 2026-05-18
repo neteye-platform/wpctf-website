@@ -50,7 +50,7 @@ import { ref } from 'vue'
 import MiniTerminal from '@/components/elements/MiniTerminal.vue'
 import SponsorsReel from '@/components/elements/SponsorsReel.vue'
 import NavHeader from '@/components/navigation/NavHeader.vue'
-import Redacted from "@/components/elements/Redacted.vue";
+import Redacted from '@/components/elements/Redacted.vue';
 import RoboBanner from '@/components/elements/RoboBanner.vue'
 import InfoDialog from '@/components/elements/InfoDialog.vue'
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.2.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.2.0...v2026.2.1) (2026-05-18)
+
+
+### Bug Fixes
+
+* update edition to the fifth one ([#64](https://github.com/neteye-platform/wpctf-website/issues/64)) ([88605a8](https://github.com/neteye-platform/wpctf-website/commit/88605a816221a26baadf8e28b91328c21e7015e2))
+
 ## [2026.2.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.1.1...v2026.2.0) (2026-05-15)
 
 

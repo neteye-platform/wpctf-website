@@ -29,7 +29,7 @@
           class="max-w-[40rem] lg:max-w-[75ch] text-terminal-secondary text-1.5xl lg:text-3xl font-normal text relative !leading-none gap-y-8 lg:text-right"
         >
           <span class="block"
-            >The WP capture the flag is back for another thrilling round on <redacted data="November 28th"/> at NOI Techpark in
+            >The WP capture the flag is back for another thrilling round on <Redacted data="November 28th"/> at NOI Techpark in
             Bolzano! This year marks a HACK-tacular fifth edition, packed with mind-bending
             challenges designed to test your cyber skills.</span
           >

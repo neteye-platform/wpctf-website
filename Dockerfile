@@ -13,21 +13,16 @@ COPY website/ .
 # build app for production with minification
 RUN npm run build
 
-FROM node:25.9.0@sha256:358f419edb0a07e6fa2d9c127c54ac2f184edaf53732551438fdcd1ed72702c7
+FROM nginxinc/nginx-unprivileged:1.27-alpine
 
-WORKDIR /app/website/
-
-COPY --from=build_image /app/website/dist ./dist
-COPY healthcheck.js .
-
-# install simple http server for serving static content
-RUN npm install -g http-server@14.1.1
-
-USER node
+COPY --from=build_image /app/website/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
-  CMD ["node", "healthcheck.js"]
+  CMD wget -q --spider http://127.0.0.1:8080/ || exit 1
 
-CMD [ "http-server", "dist", "--proxy", "http://localhost:8080?" ]
+USER 101
+
+CMD ["nginx", "-g", "daemon off;"]

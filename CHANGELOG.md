@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.2.2](https://github.com/neteye-platform/wpctf-website/compare/v2026.2.1...v2026.2.2) (2026-07-14)
+
+
+### Bug Fixes
+
+* replace http-server with nginx to reduce memory usage ([#78](https://github.com/neteye-platform/wpctf-website/issues/78)) ([9b27157](https://github.com/neteye-platform/wpctf-website/commit/9b2715762678a599e3acca8833e5214a5bc74165))
+
 ## [2026.2.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.2.0...v2026.2.1) (2026-05-18)
 
 

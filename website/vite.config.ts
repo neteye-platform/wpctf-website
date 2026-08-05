@@ -7,7 +7,14 @@ import wasm from "vite-plugin-wasm";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        // Assets under public/ are referenced by absolute URL and must stay
+        // runtime URLs. Letting the compiler turn them into imports makes Vite
+        // inline small files as data URIs that never invalidate when edited.
+        transformAssetUrls: { includeAbsolute: false }
+      }
+    }),
     wasm(),
   ],
   resolve: {

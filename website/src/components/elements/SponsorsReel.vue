@@ -11,7 +11,7 @@
         :word="'WP_CTF_2026'"
         class="relative z-40 mb-5 xl:hidden text-terminal-secondary/50 text-base"
       />
-      <!-- <div
+      <div
         class="inline-block w-screen xl:w-auto overflow-scroll xl:overflow-hidden text-nowrap !mt-0 hide-scrollbar"
       >
         <div
@@ -36,7 +36,7 @@
               :src="sponsor.src"
               width="130"
               height="60"
-              class="h-12 w-22 xl:h-14 xl:w-26 object-contain"
+              class="h-12 w-22 xl:h-14 xl:w-26 object-contain object-left"
               :class="[
                 index === 0 && 'ml-5 xl:ml-10',
                 index === sponsorsList.length - 1 && 'mr-5 xl:mr-10'
@@ -45,10 +45,10 @@
             </a>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
-    <!-- <DashDecoration class="relative z-40 !mt-2 xl:!mt-2 text-terminal-secondary/50 text-base" /> -->
+    <DashDecoration class="relative z-40 !mt-2 xl:!mt-2 text-terminal-secondary/50 text-base" />
   </div>
 </template>
 

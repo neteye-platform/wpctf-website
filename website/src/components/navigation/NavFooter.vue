@@ -68,7 +68,7 @@
             </li>
             <li>
               <a
-                  href="https://www.wuerth-phoenix.com/wp-content/uploads/2025/07/TCs-1.pdf"
+                  href="https://www.wuerth-it.it/wp-content/uploads/2026/08/202603_WPCTF_Regolamento_en.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"

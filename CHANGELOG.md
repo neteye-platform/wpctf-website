@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.3.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.2.2...v2026.3.0) (2026-08-06)
+
+
+### Features
+
+* update sponsor section in website ([#87](https://github.com/neteye-platform/wpctf-website/issues/87)) ([4b0b8c0](https://github.com/neteye-platform/wpctf-website/commit/4b0b8c0326f1a5e001e4d8510ff8f9ccc17f7c90))
+
 ## [2026.2.2](https://github.com/neteye-platform/wpctf-website/compare/v2026.2.1...v2026.2.2) (2026-07-14)
 
 

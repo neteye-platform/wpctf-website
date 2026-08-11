@@ -33,6 +33,12 @@ const sponsorEntries: Sponsor[] = [
     id: 'gravitate'
   },
   {
+    src: '/images/sponsors/longo.svg',
+    alt: 'Longo',
+    rank: 'silver',
+    id: 'longo'
+  },
+  {
     src: '/images/sponsors/wurth.svg',
     alt: 'Würth Italia',
     rank: 'silver',

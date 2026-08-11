@@ -180,6 +180,44 @@
         </div>
       </div>
 
+      <!-- Longo section -->
+      <div class="xl:col-span-3 col-span-12 flex">
+      </div>
+      <div class="xl:col-span-3 col-span-12 flex xl:ml-8" id="longo">
+        <div>
+          <a
+              class="text-5xl xl:text-5xl text-left font-W95FA heading mb-7 xl:mb-0 xl:hover:text-white xl:hover:opacity-80 transition-all"
+              href="https://www.longo.media/"
+              target="_blank"
+              rel="noopener"
+          >
+            <div class="text-xl mb-4 mt-0 !leading-none block text-terminal-secondary font-terminal uppercase group-hover:xl:!text-white group-hover:xl:!opacity-80">Silver sponsor</div>
+            <img src="/images/sponsors/longo.svg" alt="Longo" class="sponsor-logo" />
+          </a>
+        </div>
+      </div>
+
+      <div class="xl:col-span-4 col-span-12 flex text-shadow-glow-low">
+        <p class="block text-1.25xl mb-8">
+          We’re LONGO, a printing company from Bolzano with over 65 years of experience.
+          <br /><br />
+          We focus on high-quality print products and combine craftsmanship with innovation. With deep know-how in prepress and color, we turn ideas into sharp results. We’re hands-on, passionate makers—curious, precise, and always up for a challenge.
+          <br />
+          <br />
+          <a href="https://www.longo.media/" target="_blank" rel="noopener" class="xl:hover:text-white"
+          >>> longo.media
+          </a>
+        </p>
+      </div>
+
+      <div class="col-span-12 xl:col-span-12 w-full flex justify-center text-shadow-glow-medium">
+        <div
+            class="relative h-[fit-content] w-full text-terminal-secondary text-1.5xl xl:text-xl pb-4 pt-4 formatted-text font-terminal"
+        >
+          <div class="horizontal-divider mb-2 xl:block"></div>
+        </div>
+      </div>
+
       <!-- Wuerth Italia section -->
       <div class="xl:col-span-3 col-span-12 flex">
       </div>

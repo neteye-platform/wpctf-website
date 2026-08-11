@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.4.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.3.0...v2026.4.0) (2026-08-11)
+
+
+### Features
+
+* add Longo as a new silver sponsor to the website ([#93](https://github.com/neteye-platform/wpctf-website/issues/93)) ([366356e](https://github.com/neteye-platform/wpctf-website/commit/366356e4d402cb86c5ce6dbba72e9c05dcaf289c))
+
 ## [2026.3.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.2.2...v2026.3.0) (2026-08-06)
 
 

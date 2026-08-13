@@ -108,13 +108,23 @@
 
 <script setup lang="ts">
 import { gsap } from 'gsap'
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
+
+let unlockTimer: ReturnType<typeof setTimeout> | undefined
 
 onMounted(() => {
+  document.body.classList.add('overflow-hidden')
   gsap.to('#loader', { autoAlpha: 0, duration: 0.3, delay: 2.2 })
-  setTimeout(() => {
-    document.body.classList.add('!overflow-auto')
+  unlockTimer = setTimeout(() => {
+    document.body.classList.remove('overflow-hidden')
   }, 2000)
+})
+
+onUnmounted(() => {
+  if (unlockTimer !== undefined) {
+    clearTimeout(unlockTimer)
+  }
+  document.body.classList.remove('overflow-hidden')
 })
 </script>
 
@@ -147,7 +157,7 @@ onMounted(() => {
   .container {
     --color_primary: rgb(010, 010, 010);
     --color_secondary: rgb(255, 255, 255);
-    --color_tertiary: #E713FF;
+    --color_tertiary: #e713ff;
     position: relative;
     display: flex;
     flex-direction: column;

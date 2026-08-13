@@ -47,27 +47,25 @@
 import { onBeforeMount, ref } from 'vue'
 import TrackingService from '@/TrackingService/TrackingService'
 
-let userMadeChoice = ref(false)
+const userMadeChoice = ref(false)
 onBeforeMount(() => {
-  document.body.classList.add('overflow-hidden')
-  let cookiesAccepted = TrackingService.getUserAcceptsValue()
+  const cookiesAccepted = TrackingService.getUserAcceptsValue()
   if (cookiesAccepted !== null) {
-    enableScroll()
+    hideBanner()
   }
 })
 
-function enableScroll() {
-  document.body.classList.remove('overflow-hidden')
+function hideBanner() {
   userMadeChoice.value = true
 }
 
 function accept() {
-  enableScroll()
+  hideBanner()
   TrackingService.consent()
 }
 
 function decline() {
-  enableScroll()
+  hideBanner()
   TrackingService.decline()
 }
 </script>

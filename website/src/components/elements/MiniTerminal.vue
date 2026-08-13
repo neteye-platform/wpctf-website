@@ -31,15 +31,13 @@ const firstAnimationIsActive = ref<boolean>(true)
 const tl = gsap.timeline()
 
 onMounted(() => {
-  let text1, text2, text3
-
-  text1 =
+  let text1: string =
     '$ wpctf --edition 2026 -h<br>' +
     'Presented by: Würth IT Italy<br>' +
     'Location: NOI Techpark in Bolzano<br>' +
     'Date: Sat Nov 28 08:00:00 AM CET 2026'
 
-  text2 =
+  const text2: string =
     '_____________________________________________<br>' +
     'Commands for more info<br>' +
     '> About      A<br>' +

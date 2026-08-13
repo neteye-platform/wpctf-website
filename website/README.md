@@ -5,8 +5,11 @@ Vue 3 and TypeScript single-page application for the
 tooling, Pinia manages application state, Vue Router handles navigation, and
 Tailwind CSS provides the styling system.
 
-Repository-level build, container, and release information is available in the
-[root README](../README.md).
+## Repository structure
+
+- [`src/`](src/) contains the application source.
+- [`public/`](public/) contains static assets.
+- [`tests/`](tests/) contains Playwright end-to-end coverage.
 
 ## Requirements
 
@@ -63,4 +66,30 @@ By default, Playwright starts the Vite development server at
 <http://localhost:5173>. Set `BASE_URL` to test an already-running deployment;
 when it is set, Playwright does not start a local server.
 
-CI builds the production container and runs the Chromium project against it.
+## Container image
+
+Build and run the production image from the repository root:
+
+```sh
+docker build -t wpctf-website .
+docker run --rm -p 8080:8080 wpctf-website
+```
+
+The website is then available at <http://localhost:8080>.
+
+Pull requests build the container and run the Playwright suite against it in
+Chromium. Tags matching `v<major>.<minor>.<patch>` trigger the release workflow
+that publishes the container image.
+
+## Quality checks
+
+Run these commands from `website/`:
+
+```sh
+npm run build
+npm run lint
+npm run test:e2e
+```
+
+The build includes TypeScript checking. Playwright starts a local Vite server
+automatically when `BASE_URL` is not set.

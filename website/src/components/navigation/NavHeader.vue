@@ -242,7 +242,10 @@
             </a>
           </li>
           <li class="hidden md:flex items-center">
-            <a href="/sponsors" class="button text-terminal-main uppercase hover:text-terminal-text text-shadow-glow">
+            <a
+              href="/sponsors"
+              class="button text-terminal-main uppercase hover:text-terminal-text text-shadow-glow"
+            >
               Sponsors
             </a>
           </li>
@@ -264,11 +267,10 @@
 
 <script setup lang="ts">
 import NavLogo from '@/components/elements/NavLogo.vue'
-import { inject } from 'vue'
+import { useEmitter } from '@/events'
 
-const emitter = inject('emitter')
+const emitter = useEmitter()
 function scrollPageTo(target: string): void {
-  // @ts-expect-error Mitt
   emitter.emit('scrollTo', target)
 }
 </script>

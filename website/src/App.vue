@@ -15,9 +15,9 @@ export default {
 
 <script setup lang="ts">
 import NavFooter from '@/components/navigation/NavFooter.vue'
-import { inject } from 'vue'
+import { useEmitter } from '@/events'
 
-const emitter: any = inject('emitter')
+const emitter = useEmitter()
 emitter.on('scrollTo', (target) => {
   // *Listen* for event
   scrollPage(target)
@@ -74,5 +74,4 @@ function scrollPage(target: string): void {
   z-index: 99999;
   mix-blend-mode: difference;
 }
-
 </style>

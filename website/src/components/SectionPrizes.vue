@@ -14,10 +14,13 @@
         >
           Prizes
         </h2>
-        <p class="text-terminal-secondary text-1.5xl xl:text-xl !leading-tight text-shadow-glow-low">
+        <p
+          class="text-terminal-secondary text-1.5xl xl:text-xl !leading-tight text-shadow-glow-low"
+        >
           The teams ranking first, second and third place will all be awarded prizes in the form of
-          multi-brand gift cards for the value corresponding to their rank. The value of the prizes will be
-          equally divided between team members. The vouchers are personal and will be issued within 15 days after the event.
+          multi-brand gift cards for the value corresponding to their rank. The value of the prizes
+          will be equally divided between team members. The vouchers are personal and will be issued
+          within 15 days after the event.
         </p>
       </div>
     </div>
@@ -278,7 +281,7 @@
 import WordDecoration from '@/components/elements/WordDecoration.vue'
 import PrizesHoverEffect from '@/components/elements/PrizesHoverEffect.vue'
 
-import { h, onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const hoveringElement = ref<number | null>(null)
 const isMobile = ref<boolean>(false)

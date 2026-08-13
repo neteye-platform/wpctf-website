@@ -9,7 +9,7 @@
         <h2
           class="text-terminal-main text-7xl xl:text-7.5xl text-left font-W95FA flex flex-col text-shadow-glow"
         >
-          <span class="heading" data-content="28.Nov"><redacted data="28.Nov"/></span>
+          <span class="heading" data-content="28.Nov"><redacted data="28.Nov" /></span>
           <span class="heading" data-content="Bolzano">NOI Techpark</span>
         </h2>
         <div class="w-full h-[19rem] flex justify-center text-shadow-glow-medium">
@@ -17,10 +17,10 @@
             class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-1.5xl xl:text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
           >
             <span id="about-text-1" class="!leading-[1.1] w-full block">
-              Every 1.0s: python -c "import datetime; print(datetime.datetime(<redacted data="2026, 11, 28, 8, 0"/>) -
-              datetime.datetime.today())
-              <br /><br />
-              <redacted :data="etaEvent"/>
+              Every 1.0s: python -c "import datetime; print(datetime.datetime(<redacted
+                data="2026, 11, 28, 8, 0"
+              />) - datetime.datetime.today()) <br /><br />
+              <redacted :data="etaEvent" />
             </span>
           </div>
         </div>
@@ -57,59 +57,50 @@
 
                 <div class="col-span-12 mt-6">SYNOPSIS</div>
                 <div class="col-span-1 xl:col-span-2"></div>
-                <div class="col-span-11 xl:col-span-9">
-                  wpctf [OPTION]...
-                </div>
-
+                <div class="col-span-11 xl:col-span-9">wpctf [OPTION]...</div>
 
                 <div class="col-span-12 mt-6">DESCRIPTION</div>
                 <div class="col-span-1 xl:col-span-2"></div>
                 <div class="col-span-11 xl:col-span-9">
-                  The {WP CTF 2026} competition is designed for cyber-savvy university students. Find the software vulnerabilities, collect the hidden "flags" and win the competition!
+                  The {WP CTF 2026} competition is designed for cyber-savvy university students.
+                  Find the software vulnerabilities, collect the hidden "flags" and win the
+                  competition!
                 </div>
                 <div class="col-span-1 xl:col-span-2"></div>
                 <div class="col-span-11 xl:col-span-9 mt-6">
-                  All you need is your laptop and the willingness to compete!
-                  We'll take care of the rest: breakfast,
-                  lunch and snacks will be provided to make sure you
-                  have all the necessary energy to capture all the flags. But wait, that's not all! After the
-                  competition there will be an aperitif so you can get to know all the event participants and organizers, allowing you to expand your network!
+                  All you need is your laptop and the willingness to compete! We'll take care of the
+                  rest: breakfast, lunch and snacks will be provided to make sure you have all the
+                  necessary energy to capture all the flags. But wait, that's not all! After the
+                  competition there will be an aperitif so you can get to know all the event
+                  participants and organizers, allowing you to expand your network!
                 </div>
 
                 <div class="col-span-1 xl:col-span-2"></div>
-                <div class="col-span-11 xl:col-span-9 mt-6">
-                  -w, --when
-                </div>
+                <div class="col-span-11 xl:col-span-9 mt-6">-w, --when</div>
                 <div class="col-span-3 xl:col-span-4"></div>
                 <div class="col-span-9 xl:col-span-8">
-                  <div class="col-span-12">print the event date: </div>
+                  <div class="col-span-12">print the event date:</div>
                   <div class="col-span-12">
-                    <redacted data="November 28, 2026"/>
+                    <redacted data="November 28, 2026" />
                   </div>
                 </div>
 
                 <div class="col-span-1 xl:col-span-2"></div>
-                <div class="col-span-11 xl:col-span-9 mt-6">
-                  -h, --hour
-                </div>
+                <div class="col-span-11 xl:col-span-9 mt-6">-h, --hour</div>
                 <div class="col-span-3 xl:col-span-4"></div>
                 <div class="col-span-9 xl:col-span-8">
                   <div class="col-span-12">print the event duration:</div>
-                  <div class="col-span-12">
-                    8:00 - 18:00
-                  </div>
+                  <div class="col-span-12">8:00 - 18:00</div>
                 </div>
 
                 <div class="col-span-1 xl:col-span-2"></div>
-                <div class="col-span-11 xl:col-span-9 mt-6">
-                  -a, --address
-                </div>
+                <div class="col-span-11 xl:col-span-9 mt-6">-a, --address</div>
                 <div class="col-span-3 xl:col-span-4"></div>
                 <div class="col-span-9 xl:col-span-8">
                   <div class="col-span-12">print the location:</div>
                   <div class="col-span-12">
-                    NOI Tech Park<br>
-                    Via Volta 13/A, 39100<br>
+                    NOI Tech Park<br />
+                    Via Volta 13/A, 39100<br />
                     Bolzano, Italy
                   </div>
                 </div>
@@ -117,14 +108,18 @@
                 <div class="col-span-12 mt-6">SEE ALSO</div>
                 <div class="col-span-1 xl:col-span-2"></div>
                 <div class="col-span-11 xl:col-span-9">
-                  <a href="https://2023.wpctf.it" target="_blank" class="hover:text-white">wpctf2023(1)</a>, <a href="https://2024.wpctf.it" target="_blank" class="hover:text-white">wpctf2024(1)</a>, <a href="https://2025.wpctf.it" target="_blank" class="hover:text-white">wpctf2025(1)</a>
+                  <a href="https://2023.wpctf.it" target="_blank" class="hover:text-white"
+                    >wpctf2023(1)</a
+                  >,
+                  <a href="https://2024.wpctf.it" target="_blank" class="hover:text-white"
+                    >wpctf2024(1)</a
+                  >,
+                  <a href="https://2025.wpctf.it" target="_blank" class="hover:text-white"
+                    >wpctf2025(1)</a
+                  >
                 </div>
-
               </div>
-              <span
-                id="mini-terminal-cursor"
-                class="relative left-0 terminal-blink"
-              >
+              <span id="mini-terminal-cursor" class="relative left-0 terminal-blink">
                 <span class="text-base">█</span>
               </span>
             </div>
@@ -141,8 +136,7 @@ import { TextPlugin } from 'gsap/TextPlugin'
 import { Draggable } from 'gsap/Draggable'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { onMounted, ref } from 'vue'
-import { useCheckDevice } from '@/stores/device'
-import Redacted from "@/components/elements/Redacted.vue";
+import Redacted from '@/components/elements/Redacted.vue'
 
 gsap.registerPlugin(TextPlugin, Draggable, ScrollTrigger)
 

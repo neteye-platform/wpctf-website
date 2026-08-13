@@ -116,7 +116,9 @@
               <div
                 class="col-span-12 xl:col-span-4 flex flex-col left-start after:hidden xl:after:block right-end !px-2 pt-6 xl:pt-0"
               >
-                <pre class="flex-grow text-base xl:text-sm relative xl:bottom-[initial] -bottom-5">
+                <pre
+                  class="flex-grow text-base xl:text-sm relative xl:bottom-[initial] -bottom-5 overflow-x-auto xl:overflow-x-visible"
+                >
  _       ___   _      __  __        __________
 | |     / (_) (_)____/ /_/ /_      /  _/_  __/
 | | /| / / / / / ___/ __/ __ \     / /  / /
@@ -130,8 +132,7 @@
 /___/ /_/  \__,_/_/\__, /
                   /____/
 
-                  </pre
-                >
+                  </pre>
                 <button
                   type="button"
                   class="text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] horizontal-divider col-span-12 flex-shrink-0 items-center justify-center pt-8 pb-6 group hidden xl:flex text-shadow-glow-medium"
@@ -149,15 +150,18 @@
       </div>
     </div>
     <div class="grid grid-cols-4 xl:grid-cols-8 w-full mt-10">
-      <div class="text-terminal-text text-shadow-glow-low flex flex-col items-end col-span-4 xl:col-span-7"></div>
+      <div
+        class="text-terminal-text text-shadow-glow-low flex flex-col items-end col-span-4 xl:col-span-7"
+      ></div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { inject, ref } from 'vue'
+import { ref } from 'vue'
 import RoboBanner from '@/components/elements/RoboBanner.vue'
 import InfoDialog from '@/components/elements/InfoDialog.vue'
+import { useEmitter } from '@/events'
 
 const isInfoDialogOpen = ref(false)
 
@@ -258,20 +262,23 @@ const currentRuleIndex = ref(0)
 document.addEventListener('keydown', (e) => {
   if (e.keyCode === 38) {
     e.preventDefault()
-    currentRuleIndex.value == 0
-      ? (currentRuleIndex.value = rules.length - 1)
-      : currentRuleIndex.value--
+    if (currentRuleIndex.value === 0) {
+      currentRuleIndex.value = rules.length - 1
+    } else {
+      currentRuleIndex.value = currentRuleIndex.value - 1
+    }
   } else if (e.keyCode === 40) {
     e.preventDefault()
-    currentRuleIndex.value == rules.length - 1
-      ? (currentRuleIndex.value = 0)
-      : currentRuleIndex.value++
+    if (currentRuleIndex.value === rules.length - 1) {
+      currentRuleIndex.value = 0
+    } else {
+      currentRuleIndex.value = currentRuleIndex.value + 1
+    }
   }
 })
 
-const emitter = inject('emitter')
+const emitter = useEmitter()
 function scrollPageTo(target: string): void {
-  // @ts-ignore
   emitter.emit('scrollTo', target)
 }
 </script>
@@ -287,7 +294,13 @@ function scrollPageTo(target: string): void {
     display: block;
     width: 100%;
     height: 1px;
-    background: repeating-linear-gradient(90deg, #E713FF 0, #E713FF 6.3px, transparent 6.3px, transparent 10px);
+    background: repeating-linear-gradient(
+      90deg,
+      #e713ff 0,
+      #e713ff 6.3px,
+      transparent 6.3px,
+      transparent 10px
+    );
   }
 }
 
@@ -300,7 +313,13 @@ function scrollPageTo(target: string): void {
     height: 100%;
     left: 2px;
     width: 1px;
-    background: repeating-linear-gradient(180deg, #E713FF 0, #E713FF 12px, transparent 12px, transparent 16px);
+    background: repeating-linear-gradient(
+      180deg,
+      #e713ff 0,
+      #e713ff 12px,
+      transparent 12px,
+      transparent 16px
+    );
   }
 }
 
@@ -313,7 +332,13 @@ function scrollPageTo(target: string): void {
     height: 100%;
     right: 2px;
     width: 1px;
-    background: repeating-linear-gradient(180deg, #E713FF 0, #E713FF 12px, transparent 12px, transparent 16px);
+    background: repeating-linear-gradient(
+      180deg,
+      #e713ff 0,
+      #e713ff 12px,
+      transparent 12px,
+      transparent 16px
+    );
   }
 }
 

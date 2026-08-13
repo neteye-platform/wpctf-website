@@ -16,7 +16,8 @@
                 href="/#register"
                 class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
               >
-                &gt; Register <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
+                &gt; Register
+                <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
               </a>
             </li>
             <li class="pt-6">
@@ -34,7 +35,8 @@
                 type="button"
                 class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
               >
-                &gt; Prizes <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
+                &gt; Prizes
+                <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
               </a>
             </li>
             <li>
@@ -53,27 +55,30 @@
                 rel="noopener noreferrer"
                 class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
               >
-                &gt; Würth IT Italy <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
+                &gt; Würth IT Italy
+                <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
               </a>
             </li>
             <li>
               <a
-                  href="https://www.wuerth-phoenix.com/wp-content/uploads/2025/07/event_privacy_policy_en.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
+                href="https://www.wuerth-phoenix.com/wp-content/uploads/2025/07/event_privacy_policy_en.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
               >
-                &gt; Event Privacy Policy <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
+                &gt; Event Privacy Policy
+                <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
               </a>
             </li>
             <li>
               <a
-                  href="https://www.wuerth-it.it/wp-content/uploads/2026/08/202603_WPCTF_Regolamento_en.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
+                href="https://www.wuerth-it.it/wp-content/uploads/2026/08/202603_WPCTF_Regolamento_en.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-terminal-main group text-2xl xl:text-1.5xl xl:hover:text-terminal-text text-shadow-glow-medium"
               >
-                &gt; Terms & Conditions <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
+                &gt; Terms & Conditions
+                <span class="hidden xl:group-hover:inline text-terminal-text">&lt;</span>
               </a>
             </li>
             <li class="pt-9">
@@ -100,12 +105,5 @@
 </template>
 
 <script setup lang="ts">
-import { inject } from 'vue'
 import SponsorsReel from '@/components/elements/SponsorsReel.vue'
-
-const emitter = inject('emitter')
-function scrollPageTo(target: string): void {
-  // @ts-ignore
-  emitter.emit('scrollTo', target)
-}
 </script>

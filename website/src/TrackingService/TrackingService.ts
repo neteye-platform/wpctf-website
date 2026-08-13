@@ -1,5 +1,4 @@
-import VueMatomo from 'vue-matomo'
-import type { Router } from 'vue-router'
+import VueMatomoModule from 'vue-matomo'
 import { useCookies } from 'vue3-cookies'
 import type { App } from 'vue'
 
@@ -11,9 +10,9 @@ class TrackingServiceWrapper {
     return this._instance
   }
 
-  public init(app: App, router: Router): void {
+  public init(app: App): void {
     try {
-      app.use(VueMatomo, {
+      app.use(VueMatomoModule, {
         host: 'https://analytics.neteye.cloud',
         siteId: 4,
         enableLinkTracking: true

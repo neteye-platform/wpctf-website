@@ -43,6 +43,31 @@ test.describe('Home Page', () => {
     const registrationHeading = page.locator('#registration h2')
     await expect(registrationHeading).toHaveText('Registration')
   })
+
+  test('should contain mobile overflow while keeping the rules artwork scrollable', async ({
+    page
+  }) => {
+    await page.setViewportSize({ width: 375, height: 667 })
+    await page.goto('/')
+
+    const layout = await page.evaluate(() => {
+      const artwork = document.querySelector<HTMLElement>('#rules pre')
+      if (!artwork) return null
+
+      return {
+        documentClientWidth: document.documentElement.clientWidth,
+        documentScrollWidth: document.documentElement.scrollWidth,
+        artworkClientWidth: artwork.clientWidth,
+        artworkScrollWidth: artwork.scrollWidth,
+        artworkOverflowX: getComputedStyle(artwork).overflowX
+      }
+    })
+
+    expect(layout).not.toBeNull()
+    expect(layout?.documentScrollWidth).toBe(layout?.documentClientWidth)
+    expect(layout?.artworkScrollWidth).toBeGreaterThan(layout?.artworkClientWidth ?? 0)
+    expect(layout?.artworkOverflowX).toBe('auto')
+  })
 })
 
 test.describe('Sponsors Page', () => {

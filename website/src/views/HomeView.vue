@@ -18,10 +18,11 @@ import SectionRegistration from '@/components/SectionRegistration.vue'
 import SectionRules from '@/components/SectionRules.vue'
 import CookieBanner from '@/components/CookieBanner.vue'
 import GlitchLoader from '@/components/elements/GlitchLoader.vue'
-import { inject, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import TrackingService from '@/TrackingService/TrackingService'
+import { useEmitter } from '@/events'
 
-const emitter = inject('emitter')
+const emitter = useEmitter()
 
 onMounted(() => {
   TrackingService.trackPage()
@@ -72,7 +73,6 @@ onMounted(() => {
 
 function scrollPageTo(target: string, e: Event): void {
   e.preventDefault()
-  // @ts-ignore
   emitter.emit('scrollTo', target)
 }
 

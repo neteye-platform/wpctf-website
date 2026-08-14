@@ -42,7 +42,7 @@ withDefaults(
   }>(),
   {
     positionClass:
-      'top-32 sm:top-48 lg:top-44 xl:top-50 right-10 sm:right-auto left-auto sm:left-5 xl:left-8',
+      'top-32 sm:top-48 lg:top-44 right-10 sm:right-auto left-auto sm:left-5 xl:left-8',
     originClass: 'origin-top-right sm:origin-top-left',
     scaleClass: 'scale-75 lg:scale-100 xl:scale-125',
     rotateClass: 'rotate-[-10deg]'

@@ -90,6 +90,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="postcss" scoped>
+@reference '../../assets/css/main.css';
 .element:first-child {
   @apply !opacity-0;
 }

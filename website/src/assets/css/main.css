@@ -1,25 +1,11 @@
+@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import '_glitch.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-  font-family: 'Sysfont';
-  src:
-    url('../webfonts/sysfont.woff') format('woff'),
-    url('../webfonts/sysfont.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'W95FA';
-  src: url('../webfonts/w95fa.woff2') format('woff2');
-}
+@import './_glitch.css';
+@import './theme.css';
 
 body,
 html {
-  @apply bg-[#12121A];
+  @apply bg-[#12121a];
   font-family: 'VT323', monospace;
 }
 
@@ -28,7 +14,7 @@ body {
 }
 
 #app {
-  @apply flex-grow;
+  @apply grow;
 }
 
 @media (min-width: 1921px) {
@@ -66,18 +52,20 @@ body {
   }
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+@layer components {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-.hide-scrollbar ::-moz-scrollbar {
-  display: none;
-}
+  .hide-scrollbar ::-moz-scrollbar {
+    display: none;
+  }
 
-.hide-scrollbar {
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-color: transparent transparent; /*just hides the scrollbar for firefox */
+  .hide-scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent; /*just hides the scrollbar for firefox */
+  }
 }
 
 .dialogProviderInternalContainerStyle {

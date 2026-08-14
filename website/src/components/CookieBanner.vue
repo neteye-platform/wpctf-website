@@ -6,7 +6,7 @@
   >
     <div id="cookie" class="w-96 flex justify-center overflow-hidden">
       <div
-        class="relative h-[fit-content] w-full text-terminal-text text-xl backdrop-blur-sm formatted-text font-terminal"
+        class="relative h-[fit-content] w-full text-terminal-text text-xl backdrop-blur-xs formatted-text font-terminal"
       >
         <div class="leading-4">___Cookie_consent____________________________________</div>
         <div class="grid grid-cols-10 text-terminal-text text-xl !leading-[1.2rem] pt-0.5 pb-1.5">
@@ -23,7 +23,7 @@
           <button
             type="button"
             @click="decline"
-            class="left-start right-end text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] col-span-5 flex-shrink-0 flex items-center group justify-between"
+            class="left-start right-end text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] col-span-5 shrink-0 flex items-center group justify-between"
           >
             <span class="px-2">DECLINE</span>
             <span>X</span>
@@ -31,7 +31,7 @@
           <button
             type="button"
             @click="accept"
-            class="right-end text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] col-span-5 flex-shrink-0 flex items-center pl-4 group justify-between"
+            class="right-end text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] col-span-5 shrink-0 flex items-center pl-4 group justify-between"
           >
             <span class="px-2">ACCEPT</span>
             <span>&gt;</span>
@@ -71,6 +71,7 @@ function decline() {
 </script>
 
 <style lang="postcss" scoped>
+@reference '../assets/css/main.css';
 #cookie-container {
   z-index: 9999;
 }

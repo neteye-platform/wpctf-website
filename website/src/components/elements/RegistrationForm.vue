@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="form-container success relative z-20 bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
+      class="form-container success relative z-20 bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-xs formatted-text font-terminal"
     >
       <div class="leading-4">+---Registration-Form-------------------------+</div>
       <div class="left-start right-end !px-7">
@@ -181,6 +181,7 @@ onMounted(() => {
 </script>
 
 <style lang="postcss">
+@reference '../../assets/css/main.css';
 .hint {
   max-width: 23.5rem
 }

@@ -1,30 +1,30 @@
 @keyframes borderFlicker {
   0% {
-    @apply border-terminal-bg;
+    border-color: #e713ff;
   }
   10% {
-    @apply border-terminal-text/80;
+    border-color: rgba(231, 19, 255, 0.8);
   }
   15% {
-    @apply border-terminal-bg;
+    border-color: #e713ff;
   }
   20% {
-    @apply border-terminal-text/80;
+    border-color: rgba(231, 19, 255, 0.8);
   }
   50% {
-    @apply border-terminal-bg;
+    border-color: #e713ff;
   }
   55% {
-    @apply border-terminal-text/80;
+    border-color: rgba(231, 19, 255, 0.8);
   }
   60% {
-    @apply border-terminal-bg;
+    border-color: #e713ff;
   }
   80% {
-    @apply border-terminal-text/80;
+    border-color: rgba(231, 19, 255, 0.8);
   }
   90% {
-    @apply border-terminal-bg;
+    border-color: #e713ff;
   }
 }
 
@@ -247,7 +247,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%),
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%),
     linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 20;
   background-size:

@@ -23,7 +23,7 @@
       </div>
 
       <div
-          class="flex text-white flex-col w-full xl:w-128 self-center registration-container text-center"
+          class="flex text-white flex-col w-full xl:w-[36rem] self-center registration-container text-center"
           v-else
       >
         <div class="w-full">
@@ -65,6 +65,7 @@ function isRegistrationOpen() {
 </script>
 
 <style lang="postcss" scoped>
+@reference '../assets/css/main.css';
 .registration-title::before {
   left: 20%
 }

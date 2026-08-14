@@ -14,7 +14,7 @@
         </h2>
         <div class="w-full h-[19rem] flex justify-center text-shadow-glow-medium">
           <div
-            class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-1.5xl xl:text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
+            class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-1.5xl xl:text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-xs formatted-text font-terminal"
           >
             <span id="about-text-1" class="!leading-[1.1] w-full block">
               Every 1.0s: python -c "import datetime; print(datetime.datetime(<redacted
@@ -41,7 +41,7 @@
         </h2>
         <div class="w-full flex min-h-[30rem] xl:min-h-[34rem] justify-center">
           <div
-            class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal text-shadow-glow-medium"
+            class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative w-full text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-xs formatted-text font-terminal text-shadow-glow-medium"
           >
             <div>
               <div id="about-text-2" class="!leading-[1.1] grid grid-cols-12">

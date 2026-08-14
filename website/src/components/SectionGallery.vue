@@ -89,6 +89,7 @@ import WordDecoration from '@/components/elements/WordDecoration.vue'
 </script>
 
 <style lang="postcss" scoped>
+@reference '../assets/css/main.css';
 .link-svg:hover svg path {
   @apply fill-terminal-text;
 }

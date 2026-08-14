@@ -4,7 +4,7 @@
       <div
         v-if="modelValue"
         ref="rootRef"
-        class="info-dialog-root fixed inset-0 flex items-center justify-center px-5 outline-none"
+        class="info-dialog-root fixed inset-0 flex items-center justify-center px-5 outline-hidden"
         role="dialog"
         aria-modal="true"
         tabindex="-1"

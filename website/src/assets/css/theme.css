@@ -1,0 +1,118 @@
+@theme {
+  /* colors */
+  --color-terminal-text: #e713ff;
+  --color-terminal-bg: #e713ff;
+  --color-terminal-glow: #ffd865;
+  --color-terminal-section: #6164b1;
+  --color-terminal-main: #ffffff;
+  --color-terminal-secondary: #b45cff;
+  --color-lowcontrast-grey: #464646;
+
+  /* fonts */
+  --font-alternate: 'Sysfont', sans-serif;
+  --font-terminal: 'VT323', monospace;
+  --font-W95FA: 'W95FA', monospace;
+
+  /* fractional font sizes */
+  --text-1.25xl: 1.3rem;
+  --text-1.25xl--line-height: 1.8rem;
+  --text-1.5xl: 1.325rem;
+  --text-1.5xl--line-height: 1.85rem;
+  --text-1.75xl: 1.4rem;
+  --text-1.75xl--line-height: 2rem;
+  --text-2.5xl: 1.675rem;
+  --text-2.5xl--line-height: 2rem;
+  --text-2.75xl: 1.775rem;
+  --text-2.75xl--line-height: 2rem;
+  --text-4.5xl: 2.625rem;
+  --text-4.5xl--line-height: 2.5rem;
+  --text-5.25xl: 3.175rem;
+  --text-5.25xl--line-height: 1;
+  --text-5.5xl: 3.375rem;
+  --text-5.5xl--line-height: 1;
+  --text-6.25xl: 3.85rem;
+  --text-6.25xl--line-height: 1;
+  --text-6.5xl: 4.125rem;
+  --text-6.5xl--line-height: 1;
+  --text-7.5xl: 5rem;
+  --text-7.5xl--line-height: 1;
+  --text-7.75xl: 5.5rem;
+  --text-7.75xl--line-height: 1;
+  --text-9.5xl: 9rem;
+  --text-9.5xl--line-height: 1;
+  --text-10xl: 10rem;
+  --text-10xl--line-height: 1;
+  --text-11xl: 12.5rem;
+  --text-11xl--line-height: 1;
+  --text-12xl: 15rem;
+  --text-12xl--line-height: 1;
+
+  /* breakpoints.
+     Reproduce the original tailwind.config.js `screens` set (px) exactly.
+     Tailwind v4 defaults are rem-based; mixing px custom breakpoints with the
+     rem defaults makes v4 emit them out of numeric order (the 1680px block
+     landed before the lg/xl rem blocks), so a smaller overlapping variant
+     (lg:text-9.5xl) overrode the intended larger one (1680xl:text-10xl) at
+     wide viewports. Resetting the namespace and redeclaring every breakpoint
+     in px restores v3's ordering and pixel-exact breakpoints. */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-1366xl: 1366px;
+  --breakpoint-1440xl: 1440px;
+  --breakpoint-1536xl: 1536px;
+  --breakpoint-1680xl: 1680px;
+  --breakpoint-1728xl: 1728px;
+  --breakpoint-1921xl: 1921px;
+}
+
+/* tailwindcss-textshadow plugin equivalent */
+@utility text-shadow-glow {
+  text-shadow:
+    0px 0px 4px #e713ff,
+    0px 0px 20px #e713ff80;
+}
+
+@utility text-shadow-glow-medium {
+  text-shadow:
+    0px 0px 2px #e713ff80,
+    0px 0px 15px #e713ff4d;
+}
+
+@utility text-shadow-glow-low {
+  text-shadow:
+    0px 0px 2px #e713ff80,
+    0px 0px 10px #e713ff33;
+}
+
+/*
+ * Multi-layer drop-shadow filters. Tailwind v4's `drop-shadow` utility only
+ * accepts a single shadow, so a comma-separated theme value gets wrapped into
+ * one invalid `drop-shadow(var(...))`. Defined here as plain @utility (direct
+ * filter list) to reproduce the original v3 output exactly.
+ */
+@utility drop-shadow-glow {
+  filter: drop-shadow(0px 0px 4px #e713ff) drop-shadow(0px 0px 20px #e713ff66);
+}
+
+@utility drop-shadow-glow-medium {
+  filter: drop-shadow(0px 0px 2px #e713ff) drop-shadow(0px 0px 15px #e713ff4d);
+}
+
+@utility drop-shadow-glow-low {
+  filter: drop-shadow(0px 0px 2px #e713ff80) drop-shadow(0px 0px 10px #e713ff33);
+}
+
+@font-face {
+  font-family: 'Sysfont';
+  src:
+    url('../webfonts/sysfont.woff') format('woff'),
+    url('../webfonts/sysfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'W95FA';
+  src: url('../webfonts/w95fa.woff2') format('woff2');
+}

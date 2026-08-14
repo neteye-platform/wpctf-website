@@ -17,7 +17,7 @@
         WP CTF 2026
       </h1>
     </div>
-    <div class="grid grid-cols-4 xl:grid-cols-8 px-5 xl:px-10 flex-grow">
+    <div class="grid grid-cols-4 xl:grid-cols-8 px-5 xl:px-10 grow">
       <div
         class="col-span-4 xl:col-span-4 flex items-end justify-end pt-12 xl:pt-0 xl:pb-8 pb-8 order-2 xl:order-1 text-shadow-glow-medium"
       >

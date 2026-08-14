@@ -63,7 +63,7 @@
 
       <div class="col-span-12 xl:col-span-12 w-full flex justify-center text-shadow-glow-medium">
         <div
-            class="relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
+            class="relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl pb-4 pt-4 backdrop-blur-xs formatted-text font-terminal"
         >
           <div class="horizontal-divider mb-2 xl:block"></div>
         </div>
@@ -283,7 +283,7 @@
 
       <div class="col-span-12 xl:col-span-12 w-full flex justify-center text-shadow-glow-medium mb-64">
         <div
-          class="relative h-[fit-content] w-full text-terminal-text text-1.25xl xl:text-xl pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
+          class="relative h-[fit-content] w-full text-terminal-text text-1.25xl xl:text-xl pb-4 pt-4 backdrop-blur-xs formatted-text font-terminal"
         >
           <div class="horizontal-divider mb-2 xl:block"></div>
         </div>
@@ -297,6 +297,7 @@ import NavHeader from '@/components/navigation/NavHeader.vue'
 </script>
 
 <style lang="postcss" scoped>
+@reference '../assets/css/main.css';
 .sponsor-logo {
   @apply block h-24 w-auto mb-8;
 }

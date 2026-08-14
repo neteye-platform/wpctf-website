@@ -276,6 +276,7 @@ function scrollPageTo(target: string): void {
 </script>
 
 <style lang="postcss" scoped>
+@reference '../../assets/css/main.css';
 .button {
   @apply inline-flex h-10 items-center px-7 text-xl relative;
 

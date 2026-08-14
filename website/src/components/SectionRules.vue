@@ -37,7 +37,7 @@
         class="col-span-4 xl:col-span-6 w-full flex justify-center text-shadow-glow-medium"
       >
         <div
-          class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl px-3 pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
+          class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl px-3 pb-4 pt-4 backdrop-blur-xs formatted-text font-terminal"
         >
           <div class="horizontal-divider mb-2 hidden xl:block"></div>
 
@@ -117,7 +117,7 @@
                 class="col-span-12 xl:col-span-4 flex flex-col left-start after:hidden xl:after:block right-end !px-2 pt-6 xl:pt-0"
               >
                 <pre
-                  class="flex-grow text-base xl:text-sm relative xl:bottom-[initial] -bottom-5 overflow-x-auto xl:overflow-x-visible"
+                  class="grow text-base xl:text-sm relative xl:bottom-[initial] -bottom-5 overflow-x-auto xl:overflow-x-visible"
                 >
  _       ___   _      __  __        __________
 | |     / (_) (_)____/ /_/ /_      /  _/_  __/
@@ -135,7 +135,7 @@
                   </pre>
                 <button
                   type="button"
-                  class="text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] horizontal-divider col-span-12 flex-shrink-0 items-center justify-center pt-8 pb-6 group hidden xl:flex text-shadow-glow-medium"
+                  class="text-terminal-text text-xl h-[3.6rem] !leading-[1.2rem] horizontal-divider col-span-12 shrink-0 items-center justify-center pt-8 pb-6 group hidden xl:flex text-shadow-glow-medium"
                   @click="scrollPageTo('register')"
                 >
                   <span>&gt;</span>
@@ -284,6 +284,7 @@ function scrollPageTo(target: string): void {
 </script>
 
 <style lang="postcss" scoped>
+@reference '../assets/css/main.css';
 .horizontal-divider {
   @apply w-full h-[1px] relative;
   &:before {

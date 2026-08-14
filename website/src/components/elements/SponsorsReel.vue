@@ -36,7 +36,7 @@
               :src="sponsor.src"
               width="130"
               height="60"
-              class="h-12 w-22 xl:h-14 xl:w-26 object-contain object-left"
+              class="h-12 xl:h-14 object-contain object-left"
               :class="[
                 index === 0 && 'ml-5 xl:ml-10',
                 index === sponsorsList.length - 1 && 'mr-5 xl:mr-10'
@@ -107,6 +107,7 @@ const props = defineProps({
 </script>
 
 <style lang="postcss" scoped>
+@reference '../../assets/css/main.css';
 ::-webkit-scrollbar {
   display: none;
 }

@@ -48,7 +48,7 @@
                   >______________________________________________________________________________________________________________________________________________________________________________________________________________</span
                 >
                 <span
-                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-low"
+                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate grow flex-col relative pl-5 text-shadow-glow-low"
                 >
                   <span class="">3rd</span>
                 </span>
@@ -83,7 +83,7 @@
                   1000
                 </span>
                 <span
-                  class="hidden xl:flex text-terminal-main text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
+                  class="hidden xl:flex text-terminal-main text-6.25xl text-right grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
                 >
                   <span class="">3rd</span>
                 </span>
@@ -117,7 +117,7 @@
                   >______________________________________________________________________________________________________________________________________________________________________________________________________________</span
                 >
                 <span
-                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-low"
+                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate grow flex-col relative pl-5 text-shadow-glow-low"
                 >
                   <span class="">2nd</span>
                 </span>
@@ -160,7 +160,7 @@
                   2500
                 </span>
                 <span
-                  class="hidden xl:flex text-terminal-main text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
+                  class="hidden xl:flex text-terminal-main text-6.25xl text-right grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
                 >
                   <span class="">2nd</span>
                 </span>
@@ -194,7 +194,7 @@
                   >______________________________________________________________________________________________________________________________________________________________________________________________________________</span
                 >
                 <span
-                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate flex-grow flex-col relative pl-5 text-shadow-glow-low"
+                  class="flex xl:hidden text-terminal-secondary text-5xl font-alternate grow flex-col relative pl-5 text-shadow-glow-low"
                 >
                   <span class="">1st</span>
                 </span>
@@ -251,7 +251,7 @@
                   4000
                 </span>
                 <span
-                  class="hidden xl:flex text-terminal-main text-6.25xl text-right flex-grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
+                  class="hidden xl:flex text-terminal-main text-6.25xl text-right grow flex-col justify-end !leading-[0.85] relative text-shadow-glow"
                 >
                   <span class="">1st</span>
                 </span>

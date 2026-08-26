@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026.4.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.4.0...v2026.4.1) (2026-08-26)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#67](https://github.com/neteye-platform/wpctf-website/issues/67)) ([e4ee08b](https://github.com/neteye-platform/wpctf-website/commit/e4ee08b02c210030709dfede2bef9abb0efe6fd1))
+* **deps:** update all non-major dependencies ([#97](https://github.com/neteye-platform/wpctf-website/issues/97)) ([f6639d9](https://github.com/neteye-platform/wpctf-website/commit/f6639d9a5c6062d193b30bc39add5b72f16b327e))
+* **deps:** update dependency pinia to v4 ([#85](https://github.com/neteye-platform/wpctf-website/issues/85)) ([8c55d43](https://github.com/neteye-platform/wpctf-website/commit/8c55d43475569478548883ad44a5fe76576a47c0))
+* sponsor description updated ([#100](https://github.com/neteye-platform/wpctf-website/issues/100)) ([a6d14ba](https://github.com/neteye-platform/wpctf-website/commit/a6d14ba3f63c4f1e330b9090adf059e7d1055806))
+
 ## [2026.4.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.3.0...v2026.4.0) (2026-08-11)
 
 

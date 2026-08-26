@@ -88,11 +88,9 @@
 
       <div class="xl:col-span-4 col-span-12 flex text-shadow-glow-low">
         <p class="block text-1.25xl mb-8">
-          Alpitronic is a key player in eMobility for developing innovative DC fast charger Hyperchargers, thanks to our vast experience in high-tech power electronic systems and to a lab equipped with state-of-the-art measurement technology for the comprehensive testing of power semiconductor systems.
+          Alpitronic is a leading global provider of high-power DC charging solutions for electric mobility, from Bolzano to the world. Building on deep expertise in power electronics, software development and advanced testing, we design and manufacture Hypercharger systems that combine high performance, reliability and user-friendly operation.
           <br /><br />
-          As software being vital part of DC charging solutions, we develop operating systems and backend ops-support software.
-          <br /><br />
-          Safety and stability define our engineering aspirations, while continuous investments on cybersecurity poses us on leading edge of secure DC fast chargers.
+          As the charging infrastructure becomes increasingly connected with vehicles, grids, payment systems, operators and cloud-based platforms, cybersecurity is an essential part of building trust in electric mobility. For us at Alpitronic, cybersecurity is not only a technical requirement, but a continuous commitment across the product lifecycle: from secure design and testing to software updates, vulnerability management and operational resilience. This helps support safe, reliable and scalable charging infrastructure for the transition to electric mobility.
           <br /><br />
           <a href="https://www.alpitronic.it/" target="_blank" rel="noopener" class="xl:hover:text-white"
           >>> alpitronic.it

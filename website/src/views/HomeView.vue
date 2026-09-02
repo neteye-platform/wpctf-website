@@ -1,6 +1,5 @@
 <template>
   <GlitchLoader />
-  <CookieBanner />
   <SectionHero />
   <SectionTerminal />
   <SectionPrizes />
@@ -16,17 +15,13 @@ import SectionPrizes from '@/components/SectionPrizes.vue'
 import SectionGallery from '@/components/SectionGallery.vue'
 import SectionRegistration from '@/components/SectionRegistration.vue'
 import SectionRules from '@/components/SectionRules.vue'
-import CookieBanner from '@/components/CookieBanner.vue'
 import GlitchLoader from '@/components/elements/GlitchLoader.vue'
 import { onMounted } from 'vue'
-import TrackingService from '@/TrackingService/TrackingService'
 import { useEmitter } from '@/events'
 
 const emitter = useEmitter()
 
 onMounted(() => {
-  TrackingService.trackPage()
-
   document.addEventListener('keydown', (e) => {
     if (!isRegistrationInViewPort()) {
       switch (e.key) {

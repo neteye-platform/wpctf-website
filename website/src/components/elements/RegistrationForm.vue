@@ -46,7 +46,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { useCookies } from 'vue3-cookies'
-import TrackingService from '@/TrackingService/TrackingService.ts'
 
 type UiState = 'loading' | 'error' | 'success'
 
@@ -151,7 +150,6 @@ const getRegistrationLink = async () => {
 
     registrationLink.value = data.link
     uiState.value = 'success'
-    TrackingService.eventRegistrationSuccess()
   } catch (error: unknown) {
     uiState.value = 'error'
     if (error instanceof Error) {

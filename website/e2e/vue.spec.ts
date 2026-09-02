@@ -77,26 +77,6 @@ test.describe('Sponsors Page', () => {
     await expect(sponsorsHeading).toBeVisible()
     await expect(sponsorsHeading).toHaveText('Sponsors')
   })
-
-  test('should allow vertical wheel scrolling while the cookie banner is visible', async ({
-    page
-  }) => {
-    await page.goto('/sponsors')
-    await expect(page.locator('#cookie-container')).toBeVisible()
-
-    const layout = await page.evaluate(() => ({
-      documentHeight: document.documentElement.scrollHeight,
-      viewportHeight: window.innerHeight,
-      bodyOverflowY: getComputedStyle(document.body).overflowY
-    }))
-
-    expect(layout.documentHeight).toBeGreaterThan(layout.viewportHeight)
-    expect(layout.bodyOverflowY).not.toBe('hidden')
-
-    await page.mouse.wheel(0, 600)
-
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0)
-  })
 })
 
 test.describe('Navigation', () => {

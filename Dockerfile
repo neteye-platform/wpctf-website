@@ -1,4 +1,4 @@
-FROM node:26.7.0@sha256:40fd8249a701dab7431d15074ac4cf4f1c18eecd713807599cd76a7a6caad48b AS build_image
+FROM node:26.8.2@sha256:fb192b8ad31841aadc4bb79c44ae0f59d193a798ffbc9fdce37ba6ecb20c2236 AS build_image
 
 WORKDIR /app/website
 

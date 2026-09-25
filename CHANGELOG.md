@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.4.2](https://github.com/neteye-platform/wpctf-website/compare/v2026.4.1...v2026.4.2) (2026-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#101](https://github.com/neteye-platform/wpctf-website/issues/101)) ([64d0801](https://github.com/neteye-platform/wpctf-website/commit/64d0801bdac5a740529d286193f5d9e39736c005))
+
 ## [2026.4.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.4.0...v2026.4.1) (2026-08-26)
 
 

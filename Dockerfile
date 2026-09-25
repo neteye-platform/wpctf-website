@@ -13,7 +13,7 @@ COPY website/ .
 # build app for production with minification
 RUN npm run build
 
-FROM nginxinc/nginx-unprivileged:1.31-alpine@sha256:19c132c9ab02d3b783f478743dafc7a7f42e27aa7d2bdcbec1bb1128ca8f2a07
+FROM nginxinc/nginx-unprivileged:1.31-alpine@sha256:6a23acdfca2b9cfbcec61419e3f1426bcbedb91362f2f19306a8567423bb4612
 
 COPY --from=build_image /app/website/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf

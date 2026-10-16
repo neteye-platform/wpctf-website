@@ -17,9 +17,27 @@
   src: url('../webfonts/w95fa.woff2') format('woff2');
 }
 
+/* RGB channels so Tailwind opacity modifiers (e.g. text-terminal-text/30) keep working */
+:root {
+  --terminal-primary: 255 43 161;
+  --terminal-secondary: 255 43 161;
+  --terminal-accent: 255 41 137;
+  --terminal-glow: 255 43 161;
+  --section-bg: 45 25 36;
+}
+
+.bg-section {
+  background-color: rgb(var(--section-bg));
+}
+
+.terminal-box {
+  @apply bg-terminal-accent/10 border border-terminal-accent/30;
+  box-shadow: inset 0px 0px 60px rgb(var(--terminal-accent) / 0.1);
+}
+
 body,
 html {
-  @apply bg-[#12121A];
+  @apply bg-[#0F0F0F];
   font-family: 'VT323', monospace;
 }
 

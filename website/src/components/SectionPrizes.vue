@@ -1,7 +1,7 @@
 <template>
   <section
     id="prizes-section"
-    class="w-full overflow-hidden relative py-3 !mt-40 xl:!mt-9 bg-terminal-section/15"
+    class="w-full overflow-hidden relative py-3 !mt-40 xl:!mt-9 bg-section"
     data-scroll="prizes"
   >
     <WordDecoration class="!text-terminal-secondary/30" />

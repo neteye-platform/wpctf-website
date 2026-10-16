@@ -1,7 +1,7 @@
 <template>
   <section
     id="footer-section"
-    class="w-full overflow-hidden relative py-3 bg-terminal-section/15"
+    class="w-full overflow-hidden relative py-3 bg-section"
     data-scroll="footer"
   >
     <SponsorsReel reel-id="footer-reel" :is-bottom="true" />

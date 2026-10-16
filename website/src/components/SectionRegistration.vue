@@ -1,7 +1,7 @@
 <template>
   <section
     id="registration"
-    class="bg-[#12121A] flex flex-col w-full px-5 xl:pl-0 xl:pr-10 relative overflow-hidden !mt-0 x z-40 crt pt-32 pb-32 md:pb-60 md:pt-60 "
+    class="bg-[#0F0F0F] flex flex-col w-full px-5 xl:pl-0 xl:pr-10 relative overflow-hidden !mt-0 x z-40 crt pt-32 pb-32 md:pb-60 md:pt-60 "
     data-scroll="register"
   >
     <div

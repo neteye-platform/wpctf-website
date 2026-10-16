@@ -309,8 +309,13 @@ import NavHeader from '@/components/navigation/NavHeader.vue'
     display: block;
     width: 100%;
     height: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxwYXRoIHN0cm9rZT0ibnVsbCIgZmlsbD0iI0I0NUNGRiIgZD0ibTguMTU2MywxbC02LjMxMjU5LDBsMCwtMWw2LjMxMjU5LDBsMCwxeiIgaWQ9InN2Z18yIi8+CiA8L2c+Cjwvc3ZnPgo=)
-      0 50%;
+    background: linear-gradient(
+        90deg,
+        transparent 1.84px,
+        rgb(var(--terminal-secondary)) 1.84px 8.16px,
+        transparent 8.16px
+      )
+      0 50% / 10px 1px;
   }
 }
 
@@ -323,7 +328,7 @@ import NavHeader from '@/components/navigation/NavHeader.vue'
     height: 100%;
     left: 2px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjQjQ1Q0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
+    background: linear-gradient(rgb(var(--terminal-secondary)) 75%, transparent 75%)
       repeat-y 0 0;
     background-size: 1px 1.22rem;
   }
@@ -338,7 +343,7 @@ import NavHeader from '@/components/navigation/NavHeader.vue'
     height: 100%;
     right: 2px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjQjQ1Q0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4K)
+    background: linear-gradient(rgb(var(--terminal-secondary)) 75%, transparent 75%)
       repeat-y 0 0;
     background-size: 1px 1.2rem;
   }

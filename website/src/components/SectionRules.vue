@@ -37,7 +37,7 @@
         class="col-span-4 xl:col-span-6 w-full flex justify-center text-shadow-glow-medium"
       >
         <div
-          class="bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl px-3 pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
+          class="terminal-box relative h-[fit-content] w-full text-terminal-text text-1.5xl xl:text-xl px-3 pb-4 pt-4 backdrop-blur-sm formatted-text font-terminal"
         >
           <div class="horizontal-divider mb-2 hidden xl:block"></div>
 
@@ -296,8 +296,8 @@ function scrollPageTo(target: string): void {
     height: 1px;
     background: repeating-linear-gradient(
       90deg,
-      #e713ff 0,
-      #e713ff 6.3px,
+      rgb(var(--terminal-primary)) 0,
+      rgb(var(--terminal-primary)) 6.3px,
       transparent 6.3px,
       transparent 10px
     );
@@ -315,8 +315,8 @@ function scrollPageTo(target: string): void {
     width: 1px;
     background: repeating-linear-gradient(
       180deg,
-      #e713ff 0,
-      #e713ff 12px,
+      rgb(var(--terminal-primary)) 0,
+      rgb(var(--terminal-primary)) 12px,
       transparent 12px,
       transparent 16px
     );
@@ -334,8 +334,8 @@ function scrollPageTo(target: string): void {
     width: 1px;
     background: repeating-linear-gradient(
       180deg,
-      #e713ff 0,
-      #e713ff 12px,
+      rgb(var(--terminal-primary)) 0,
+      rgb(var(--terminal-primary)) 12px,
       transparent 12px,
       transparent 16px
     );

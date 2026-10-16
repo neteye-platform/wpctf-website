@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="form-container success relative z-20 bg-terminal-bg/10 border border-terminal-text/30 shadow-[inset_0px_0px_60px_#FF139C1A] text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
+      class="form-container success relative z-20 terminal-box text-terminal-text text-xl px-5 pb-4 pt-4 !leading-none backdrop-blur-sm formatted-text font-terminal"
     >
       <div class="leading-4">+---Registration-Form-------------------------+</div>
       <div class="left-start right-end !px-7">
@@ -193,8 +193,7 @@ onMounted(() => {
     height: 100%;
     left: 1px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRTcxM0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4=)
-    repeat-y 0 0;
+    background: linear-gradient(rgb(var(--terminal-primary)) 75%, transparent 75%) repeat-y 0 0;
     background-size: 1px 1.2rem;
   }
 }
@@ -208,8 +207,7 @@ onMounted(() => {
     height: 100%;
     right: 1px;
     width: 1px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDE2Ij48cGF0aCBmaWxsPSIjRTcxM0ZGIiBkPSJNMCAwaDF2MTJIMHoiLz48L3N2Zz4=)
-    repeat-y 0 0;
+    background: linear-gradient(rgb(var(--terminal-primary)) 75%, transparent 75%) repeat-y 0 0;
     background-size: 1px 1.2rem;
   }
 }

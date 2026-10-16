@@ -12,9 +12,11 @@ export default {
       auto: 'auto'
     }),
     textShadow: {
-      glow: '0px 0px 4px #E713FF, 0px 0px 20px #E713FF80',
-      'glow-medium': '0px 0px 2px #E713FF80, 0px 0px 15px #E713FF4D',
-      'glow-low': '0px 0px 2px #E713FF80, 0px 0px 10px #E713FF33'
+      glow: '0px 0px 4px rgb(var(--terminal-glow)), 0px 0px 20px rgb(var(--terminal-glow) / 0.5)',
+      'glow-medium':
+        '0px 0px 2px rgb(var(--terminal-glow) / 0.5), 0px 0px 15px rgb(var(--terminal-glow) / 0.3)',
+      'glow-low':
+        '0px 0px 2px rgb(var(--terminal-glow) / 0.5), 0px 0px 10px rgb(var(--terminal-glow) / 0.2)'
     },
     animation: {
       none: 'none',
@@ -168,12 +170,13 @@ export default {
       pink: colors.pink,
       rose: colors.rose,
       terminal: {
-        text: '#E713FF',
-        bg: '#E713FF',
+        text: 'rgb(var(--terminal-primary) / <alpha-value>)',
+        bg: 'rgb(var(--terminal-primary) / <alpha-value>)',
         glow: '#FFD865',
         section: '#6164B1',
         main: '#FFFFFF',
-        secondary: '#B45CFF'
+        secondary: 'rgb(var(--terminal-secondary) / <alpha-value>)',
+        accent: 'rgb(var(--terminal-accent) / <alpha-value>)'
       },
       lowcontrast: {
         grey: '#464646'
@@ -269,9 +272,18 @@ export default {
       xl: ['0 20px 13px rgb(0 0 0 / 0.03)', '0 8px 5px rgb(0 0 0 / 0.08)'],
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
-      glow: ['0px 0px 4px #E713FF', '0px 0px 20px #E713FF66'],
-      'glow-medium': ['0px 0px 2px #E713FF', '0px 0px 15px #E713FF4D'],
-      'glow-low': ['0px 0px 2px #E713FF80', '0px 0px 10px #E713FF33']
+      glow: [
+        '0px 0px 4px rgb(var(--terminal-glow))',
+        '0px 0px 20px rgb(var(--terminal-glow) / 0.4)'
+      ],
+      'glow-medium': [
+        '0px 0px 2px rgb(var(--terminal-glow))',
+        '0px 0px 15px rgb(var(--terminal-glow) / 0.3)'
+      ],
+      'glow-low': [
+        '0px 0px 2px rgb(var(--terminal-glow) / 0.5)',
+        '0px 0px 10px rgb(var(--terminal-glow) / 0.2)'
+      ]
     },
     fill: ({ theme }) => ({
       none: 'none',

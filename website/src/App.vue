@@ -1,7 +1,10 @@
 <template>
-  <main class="relative z-20 !transition-all">
-    <div class="dirty-screen1"></div>
-    <div class="dirty-screen2"></div>
+  <!-- opaque background so the dirty-screen overlays blend against it -->
+  <main class="relative z-20 !transition-all bg-[#0F0F0F]">
+    <div class="dirty-screen">
+      <div class="dirty-screen1"></div>
+      <div class="dirty-screen2"></div>
+    </div>
     <RouterView />
     <NavFooter />
   </main>
@@ -47,31 +50,27 @@ function scrollPage(target: string): void {
 </script>
 
 <style lang="postcss">
-.dirty-screen1 {
+.dirty-screen {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(/images/bg-dirty1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  inset: 0;
   pointer-events: none;
   z-index: 99999;
-  mix-blend-mode: difference;
+  mix-blend-mode: lighten;
+}
+
+.dirty-screen1,
+.dirty-screen2 {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dirty-screen1 {
+  background-image: url(/images/bg-dirty1.png);
 }
 
 .dirty-screen2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   background-image: url(/images/bg-dirty2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  z-index: 99999;
-  mix-blend-mode: difference;
 }
 </style>

@@ -157,7 +157,7 @@ onUnmounted(() => {
   .container {
     --color_primary: rgb(010, 010, 010);
     --color_secondary: rgb(255, 255, 255);
-    --color_tertiary: #e713ff;
+    --color_tertiary: rgb(var(--terminal-primary));
     position: relative;
     display: flex;
     flex-direction: column;

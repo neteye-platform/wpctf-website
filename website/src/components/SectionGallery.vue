@@ -1,7 +1,7 @@
 <template>
   <section
     id="gallery-section"
-    class="w-full overflow-hidden relative py-3 bg-terminal-section/15"
+    class="w-full overflow-hidden relative py-3 bg-section"
     data-scroll="gallery"
   >
     <div class="absolute top-0 left-0 w-full h-full section-bg -z-10"></div>

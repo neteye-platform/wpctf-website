@@ -21,13 +21,13 @@
     "gsap": "3.15.0",
     "mitt": "3.0.1",
     "mobile-device-detect": "0.4.3",
-    "pinia": "4.0.3",
+    "pinia": "4.1.0",
     "vue": "3.5.44",
     "vue-router": "5.4.0",
     "vue3-cookies": "1.0.6"
   },
   "devDependencies": {
-    "@playwright/test": "1.64.0",
+    "@playwright/test": "1.64.1",
     "@rushstack/eslint-patch": "1.16.1",
     "@tsconfig/node24": "24.0.5",
     "@types/node": "24.19.2",

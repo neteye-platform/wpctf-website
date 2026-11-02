@@ -109,12 +109,23 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 import { onMounted, onUnmounted } from 'vue'
+import { useLoader } from '@/stores/loader'
+
+const loader = useLoader()
+loader.isLoading = true
 
 let unlockTimer: ReturnType<typeof setTimeout> | undefined
 
 onMounted(() => {
   document.body.classList.add('overflow-hidden')
-  gsap.to('#loader', { autoAlpha: 0, duration: 0.3, delay: 2.2 })
+  gsap.to('#loader', {
+    autoAlpha: 0,
+    duration: 0.3,
+    delay: 2.2,
+    onComplete: () => {
+      loader.isLoading = false
+    }
+  })
   unlockTimer = setTimeout(() => {
     document.body.classList.remove('overflow-hidden')
   }, 2000)
@@ -125,6 +136,7 @@ onUnmounted(() => {
     clearTimeout(unlockTimer)
   }
   document.body.classList.remove('overflow-hidden')
+  loader.isLoading = false
 })
 </script>
 

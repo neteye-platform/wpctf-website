@@ -7,6 +7,7 @@
     </div>
     <RouterView />
     <NavFooter />
+    <CookieBanner />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ export default {
 
 <script setup lang="ts">
 import NavFooter from '@/components/navigation/NavFooter.vue'
+import CookieBanner from '@/components/CookieBanner.vue'
 import { useEmitter } from '@/events'
 
 const emitter = useEmitter()

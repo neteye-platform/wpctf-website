@@ -2,6 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0VCPT8YXK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      // Analytics storage stays denied until the visitor accepts in the cookie banner.
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: document.cookie.split('; ').includes('user-accepts-cookies=true') ? 'granted' : 'denied'
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-T0VCPT8YXK');
+    </script>
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" as="style" rel="preload">

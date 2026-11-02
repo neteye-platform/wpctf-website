@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.5.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.4.3...v2026.5.0) (2026-11-02)
+
+
+### Features
+
+* add analytics and cookie banner ([#117](https://github.com/neteye-platform/wpctf-website/issues/117)) ([84bd47c](https://github.com/neteye-platform/wpctf-website/commit/84bd47c79878f4fa63ce071a6334d6fbb7d41389))
+
 ## [2026.4.3](https://github.com/neteye-platform/wpctf-website/compare/v2026.4.2...v2026.4.3) (2026-10-16)
 
 

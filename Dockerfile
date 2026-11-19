@@ -1,4 +1,4 @@
-FROM node:20.11.1 AS BUILD_IMAGE
+FROM node:20.11.1 AS build_image
 
 # make the 'app' folder the current working directory
 WORKDIR /app
@@ -37,14 +37,16 @@ RUN cp -a /app/registration-challenge/pkg/zzc3IJDtB2kn5FMWa.js /app/website/publ
 	&& cp -a /app/registration-challenge/pkg/zzc3IJDtB2kn5FMWa_bg.wasm /app/website/public/js/ \
 	&& npm run build
 
-FROM node:20.11.1
+FROM nginxinc/nginx-unprivileged:1.27-alpine
 
-WORKDIR /app/website/
-
-COPY --from=BUILD_IMAGE /app/website/dist ./dist
-
-# install simple http server for serving static content
-RUN npm install -g http-server@14.1.1
+COPY --from=build_image /app/website/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
-CMD [ "http-server", "dist", "--proxy", "http://localhost:8080?" ]
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
+  CMD ["/bin/sh", "-c", "wget -q --spider http://127.0.0.1:8080/ || exit 1"]
+
+USER 101
+
+CMD ["nginx", "-g", "daemon off;"]

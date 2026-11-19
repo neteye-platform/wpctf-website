@@ -38,7 +38,7 @@ RUN cp -a /app/registration-challenge/pkg/zzc3IJDtB2kn5FMWa.js /app/website/publ
 	&& cp -a /app/registration-challenge/pkg/zzc3IJDtB2kn5FMWa_bg.wasm /app/website/public/js/ \
 	&& npm run build
 
-FROM nginxinc/nginx-unprivileged:1.27-alpine
+FROM quay.io/nginx/nginx-unprivileged:1.31.9-alpine@sha256:60214a103e6f38e953ff957f34b1f2e97a9db801ab2df3821da955d0fe6cadd6
 
 COPY --from=build_image /app/website/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf

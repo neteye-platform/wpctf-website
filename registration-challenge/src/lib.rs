@@ -200,6 +200,8 @@ mod test {
 
     #[test]
     fn test_shell_execute_command() {
+        // SAFETY: tests run on one thread; test_check_password logs in first.
+        unsafe { LOGGED_IN = false }
         assert_eq!(
             shell_execute_command("ls".to_string(), "".to_string()),
             "You must be logged in"

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.5.1](https://github.com/neteye-platform/wpctf-website/compare/v2026.5.0...v2026.5.1) (2026-11-19)
+
+
+### Bug Fixes
+
+* **deps:** bump nginx to 1.31.9 (OSGO-747) ([#120](https://github.com/neteye-platform/wpctf-website/issues/120)) ([7b3934d](https://github.com/neteye-platform/wpctf-website/commit/7b3934d4b64eecffaeecb0d835b65300d7a5f90f))
+
 ## [2026.5.0](https://github.com/neteye-platform/wpctf-website/compare/v2026.4.3...v2026.5.0) (2026-11-02)
 
 

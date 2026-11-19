@@ -1,4 +1,4 @@
-FROM node:25.1.0 AS BUILD_IMAGE
+FROM node:25.1.0 AS build_image
 
 WORKDIR /app/website
 
@@ -13,16 +13,16 @@ COPY website/ .
 # build app for production with minification
 RUN npm run build
 
-FROM node:25.1.0
+FROM nginxinc/nginx-unprivileged:1.27-alpine
 
-WORKDIR /app/website/
-
-COPY --from=BUILD_IMAGE /app/website/dist ./dist
-
-# install simple http server for serving static content
-RUN npm install -g http-server@14.1.1
-
-USER node
+COPY --from=build_image /app/website/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
-CMD [ "http-server", "dist", "--proxy", "http://localhost:8080?" ]
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
+  CMD ["/bin/sh", "-c", "wget -q --spider http://127.0.0.1:8080/ || exit 1"]
+
+USER 101
+
+CMD ["nginx", "-g", "daemon off;"]

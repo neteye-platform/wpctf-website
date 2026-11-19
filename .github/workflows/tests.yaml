@@ -1,0 +1,62 @@
+name: E2E Tests
+
+on:
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  build-docker-image:
+    permissions:
+      contents: read
+      packages: write
+    uses: neteye-platform/repo-commons/.github/workflows/build-docker-image.yaml@e8e2d702d7a80fc53886bd28a7ddcbb05906180a # main
+    with:
+      working-directory: "."
+      dockerfile-path: "./Dockerfile"
+      image-name: ${{ github.event.repository.name }}
+      push: false
+
+  e2e-tests:
+    name: E2E Tests
+    needs: build-docker-image
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Download Docker image
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: ${{ github.event.repository.name }}-image
+          path: ${{ runner.temp }}/
+
+      - name: Load Docker image
+        run: |
+          # Tag what was loaded: the runner image ships other cached images
+          image=$(docker load -q -i ${{ runner.temp }}/image.tar | sed -n 's/^Loaded image\( ID\)\?: //p' | head -1)
+          docker tag "$image" wpctf-website:pr
+
+      - name: Start container
+        run: docker run -d --name wpctf -p 8080:8080 wpctf-website:pr
+
+      - name: Wait for container to be ready
+        run: |
+          for i in $(seq 1 30); do
+            curl -sf http://127.0.0.1:8080 > /dev/null && exit 0
+            sleep 1
+          done
+          docker logs wpctf
+          exit 1
+
+      # This edition has no Playwright suite, so check what the image serves
+      - name: Smoke test
+        run: |
+          curl -sf http://127.0.0.1:8080/ | grep -q '<title>CTF Capture the Flag 2024 | Würth Phoenix</title>'
+          curl -sf -o /dev/null http://127.0.0.1:8080/some/deep/route
+          asset=$(curl -sf http://127.0.0.1:8080/ | grep -oE '(js|assets)/[^" >]+\.js' | head -1)
+          curl -sfI "http://127.0.0.1:8080/$asset" | grep -qi '^cache-control: public, immutable'
+
+      - name: Stop container
+        if: always()
+        run: docker rm -f wpctf

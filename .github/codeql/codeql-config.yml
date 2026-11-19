@@ -1,0 +1,10 @@
+---
+# Frozen 2024 edition: skip quality-only queries and the challenge script,
+# whose repeated keys are part of the puzzle
+paths-ignore:
+  - website/public/js/registration.js
+query-filters:
+  - exclude:
+      id:
+        - js/unused-local-variable
+        - js/automatic-semicolon-insertion

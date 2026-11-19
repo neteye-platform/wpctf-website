@@ -19,7 +19,8 @@ WORKDIR /app/registration-challenge
 COPY registration-challenge/ .
 
 # run test of registration-challenge and build wasm artifact
-RUN cargo test \
+# (one thread: the tests share the LOGGED_IN static)
+RUN cargo test -- --test-threads=1 \
 	&& wasm-pack build --target=web --out-name=zzc3IJDtB2kn5FMWa
 
 WORKDIR /app/website

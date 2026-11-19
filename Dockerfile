@@ -1,4 +1,4 @@
-FROM node:14.21.3
+FROM node:14.21.3 AS build_image
 
 # make the 'app' folder the current working directory
 WORKDIR /app
@@ -7,13 +7,13 @@ WORKDIR /app
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install rustup
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain 1.73.0
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain 1.82.0
 
 # Export rust bin path
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 # Install rust-wasm
-RUN PATH="root/.cargo/bin:$PATH" curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh -s -- -y --default-toolchain 1.73.0
+RUN PATH="root/.cargo/bin:$PATH" curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh -s -- -y --default-toolchain 1.82.0
 
 WORKDIR /app/registration-challenge
 
@@ -28,9 +28,8 @@ WORKDIR /app/website
 
 COPY ["website/package.json", "website/package-lock.json", "./"]
 
-# install simple http server and project dependencies
-RUN npm install -g http-server@14.1.1 \
-	&& npm ci
+# install project dependencies
+RUN npm ci
 
 # copy website files and folders to the current working directory
 COPY website/ .
@@ -38,5 +37,16 @@ COPY website/ .
 # build app for production with minification
 RUN npm run build
 
+FROM nginxinc/nginx-unprivileged:1.27-alpine
+
+COPY --from=build_image /app/website/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 8080
-CMD [ "http-server", "dist" ]
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
+  CMD ["/bin/sh", "-c", "wget -q --spider http://127.0.0.1:8080/ || exit 1"]
+
+USER 101
+
+CMD ["nginx", "-g", "daemon off;"]

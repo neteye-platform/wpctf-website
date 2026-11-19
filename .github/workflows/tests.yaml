@@ -39,8 +39,9 @@ jobs:
 
       - name: Load Docker image
         run: |
-          docker load -i ${{ runner.temp }}/image.tar
-          docker tag "$(docker images -q | head -1)" wpctf-website:pr
+          # Tag what was loaded: the runner image ships other cached images
+          image=$(docker load -q -i ${{ runner.temp }}/image.tar | sed -n 's/^Loaded image\( ID\)\?: //p' | head -1)
+          docker tag "$image" wpctf-website:pr
 
       - name: Start container
         run: docker run -d --name wpctf -p 8080:8080 wpctf-website:pr
